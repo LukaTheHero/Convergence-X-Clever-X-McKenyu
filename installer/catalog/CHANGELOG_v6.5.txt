@@ -1,0 +1,264 @@
+Convergence X Clever X McKenyu - The Convergence ER 3.0.2
+v6.5 - 2026-10-03
+
+Runs on Elden Ring Patch 1.17, The Convergence 3.0.2, Clever's Moveset
+Modpack 26.2 and McKenyu's Moveset Modpack 1.4.
+
+BACK UP YOUR SAVES before installing. Play offline.
+
+NEW: McKenyu's Moveset Modpack 1.4 is now a required download, like
+Clever's. Get it from his own Nexus page (a .rar file: keep it as it is,
+the installer unpacks it). This zip no longer carries his files.
+
+Using Infinite Durations? Pick it in the v6.5 Auto Installer. An older
+Infinite Durations regulation (v6.4 or earlier) silently undoes v6.5.
+
+
+=== NEW: THE AUTO INSTALLER ===
+
+- One main zip (this one) plus the Auto Installer covers every
+  combination. There are no separate zips per combination any more.
+- Tick the mods you want. For mods made by other people, you download the
+  file from their own Nexus page: the installer tells you which file,
+  finds it in your Downloads and checks it.
+- Clever's 26.2 and McKenyu's 1.4 packs are always required.
+- Options: Nightreign Movement, Seamless Co-op, Lucy, Infinite Durations
+  (any edition), Infinite Arrows and Bolts, ERCapacityExpansion, and
+  Deflect Me Not (experimental).
+- My own files (the merge's files for each option, Lucy, Infinite
+  Durations, Infinite Arrows) download from my GitHub and are checked
+  too.
+- Seamless Co-op is only needed when you tick it. Both players need the
+  same merge version and the same options.
+- ERCapacityExpansion (by KamiyamaShiki0704) raises Elden Ring's animation
+  limit. Off by default; the installer adds it automatically when you tick
+  Deflect Me Not and Nightreign Movement together. Tested together with
+  Seamless Co-op.
+- Nightreign Movement 0.2 "Wylder" (by neiroxgod): download it from its
+  Nexus page (mods/11174, the Convergence 3.0.2 edition) and tick it; keep
+  the zip as it is, the installer finds and checks it. Settings at any
+  Site of Grace, "Nightreign movement". Fall protection starts OFF.
+  The Nightreign walk, run and roll animations stay out: they would replace
+  every Clever and McKenyu weapon's own.
+- Lucy: her armor is Chevaleresse II by yurica (from the Skyrim SE ports
+  by THBG0 and by yurica, THBossGamer, Jeir and docteure), her hair is KS
+  Hairdos by Kalilies and Stealthic (HDT SMP version by ousnius) and her
+  body mesh is based on CBBE by Caliente and ousnius. The installer's
+  credits name them.
+- Deflect Me Not (by Rei Jr.), experimental: download Rei's DMN file for
+  this merge from his Nexus page and tick it. Please report DMN problems to
+  Rei Jr. and everything else to us.
+- Run it again any time to change your picks. Uninstall from Windows'
+  Apps list.
+
+
+=== FIXED IN v6.5 ===
+
+- Fang of Fading Thunder: the drawn-sword idle pose is one-handed only now.
+  Two-handed and powerstanced, the idle is the standard stance, so the
+  blade no longer goes into your body.
+- Rekkaryujin: now also inflicts Burn, like Convergence's fire weapons.
+  Its bleed stays.
+- Built on McKenyu's Moveset Modpack 1.4: Yamato gets his two-handed L1
+  combo; Rakuyo's heavy attack becomes its special heavy while the blood
+  buff is on, and its reworked skill is in (hold = spin, tap = one slash);
+  McKenyu's new Ronin's set texture is in.
+- Heaven Splitter and Phoenix Caller: every bow move now fires its arrow
+  as a real weapon hit that scales with the weapon, buffed or not (the
+  weapon buffs still add their element on top).
+- Phoenix Caller: the two-handed heavy attack fires its rain of arrows
+  again (it used to teleport you and not hit). The arrow it shoots into
+  the sky is flaming now, like the rain.
+- Heaven Splitter: Heaven's Call cast with full FP now gives the arrow
+  buff too.
+- Heaven Splitter: the arrows' lightning burst uses Clever's own values
+  instead of borrowing the Bolt of Gransax's.
+- Phoenix Caller: the tri arrows no longer hit your summons and allies.
+- Rakuyo: the two-handed skill (hold) now hits: the spin hits twice and
+  the blood explosion hits everyone near you. Tap and hold both count as
+  Skill hits (Shard of Alexander works).
+- Rakuyo: jump attacks are McKenyu's own again; two-handed it uses the
+  twin-blade jump.
+- Starscourge Greatsword (Clever's): the two-handed jump attack (R1) is its
+  own two-sword swing again.
+- Marais Executioner's Sword (Clever's): Hunter's Stance no longer breaks
+  other weapons afterwards (God's Bane guard follow-ups, Pale Knight
+  Gunblade light-to-heavy).
+- Great Shinobi Blade: the one-handed heavy throws the shuriken from the
+  right hand again, and wall jumps work with it (Nightreign Movement).
+- Tachikaze: the one-handed light combo sheathes the blade properly.
+- Glaive of Rapture: roll and crouch attacks hit enemies right in front of
+  you, the held skill staggers, and the skill's buff is holy.
+- Fang of Fading Thunder: walking two-handed or powerstanced no longer puts
+  the blade into your body. One-handed keeps the Raikiri walk.
+- Nightreign Movement updated to 0.2 "Wylder" (Claw Shot, Onslaught
+  Stake). With Deflect Me Not also ticked, the installer adds
+  ERCapacityExpansion automatically, so Wylder fits next to DMN.
+
+
+=== BALANCE CHANGES IN v6.5 ===
+
+Big, slow weapons hit harder now: a slow swing should land a big number.
+- Dark Moon Ring: its weapon attacks deal 45% more damage. Its spells are
+  unchanged.
+- +35% attack power: Axe of Godrick (both versions), Deathborne Odachi,
+  Deathwalker, Dragon Greatclaw, Dreadscale Odachi, God's Bane, Guardian's
+  Greatshield, Guardian's Halberd, Helphen's Steeple, Maliketh's Black
+  Blade (McKenyu version), Marais Executioner's Sword (Clever's), Marais
+  Executioner's Convergence, Morgott's Cursed Sword, Pale Knight Gunblade,
+  Serpent-Hunter and Wylder's Greatsword.
+- +25% attack power (they swing faster): Frenzied Reaper, Glaive of Rapture
+  and Great Shinobi Blade.
+- Every other weapon keeps its numbers from the Weapon Data sheet (also in
+  our Discord's faq-and-info channel):
+  https://docs.google.com/spreadsheets/d/1BJDknePl2XOu7Nao2vQ30ctCizdzgdkwJf_3fkaHmkU
+
+
+=== FIXED IN v6.4 ===
+
+- Ash of War: Thunderclap and Flash (Clever's) is back. Buy it from Kale's
+  "Clever's Shop" for 6,000 runes.
+- Bloodstarved Spear: the one-handed skill no longer turns into Euporia's
+  skill after you use another weapon's skill.
+- Dark Moon Ring: two-handed from the left hand, dodging while charging the
+  heavy attack throws the sword, as from the right hand.
+- Death's Whisper and Blightreaver: shots deal holy damage only, like
+  Convergence's crossbows. Their bash hits with holy damage too.
+- Dreadscale: after its buff ends on death or rest, two-handing uses its
+  own stance again instead of the Fang of Fading Thunder's.
+- Electrocharge: at full Current stacks, light attacks play the normal
+  combo again.
+- Fang of Fading Thunder: its drawn-sword idle pose and slow walk are back.
+- Fang of Fading Thunder and Ruyi Jingu Bang: late light-attack follow-ups
+  continue the combo as in their original packs.
+- God-Hunting Nagamaki: a War Cry heavy follow-up after a weapon swap no
+  longer throws the Marais telekinetic blade.
+- Jumping: a jump now cancels anything pressed in the same instant (item,
+  roll, spell), as in the base game.
+- Lightning incantations cast at full Current stacks no longer make your
+  next light attack skip ahead in the combo.
+- Marais Executioner's Sword (Clever's): the one-handed shield-slam heavy
+  combo and the two-handed telekinetic drill heavies are back.
+- Meteor Fists: the whole one- and two-handed moveset is Clever's again,
+  and the Ash of War buff stays on.
+- Murasama: jump attacks pressed at the top of the jump flip once, then land
+  into the red landing slash.
+- Ronin's Armor (Convergence): drinking a Crimson Flask while wearing it
+  gives the Ronin buff again.
+- Silverfang: sprint + Ash of War and the backstep skill play Silverfang's
+  own moves.
+- Yamato: two-handed jump attacks pressed at the top of the jump fire the
+  landing wave once. Two-handed LB swings now hit.
+
+
+=== SAME AS THE ORIGINAL MODS (not bugs) ===
+
+- Ash of War: Storm Ruler: after the stance slash, a light attack is a
+  normal attack unless you keep holding L2. McKenyu's pack works the same
+  way.
+- Crystaline Claw and Rhys' Swordspear: the Claw's fast moveset and the
+  Swordspear's rolling light-attack poke are The Convergence's own.
+- Rakuyo: the two-handed spin doesn't turn in the air. It snaps to a
+  locked-on target just before the hit.
+- Meteoric Ore Blade: heavy and backstep attacks are The Convergence's own
+  ore-blade moves.
+- Dreadscale Odachi: using the Ash of War again while buffed gives a second,
+  infused attack that ends two-handed.
+- Black Mortal Blade: the slow two-handed guard counter is McKenyu's own
+  animation.
+- God's Bane: the white sigil over the throwing hand is the base game's
+  Black Flame cast effect, which Clever uses on purpose. The glowing ball
+  and the big white shockwave of the two-handed heavy are Clever's own.
+- Heaven Splitter, Lucent Ferrum and Rekkaryujin: one-handed jump attacks
+  use the class jump, as in the original packs.
+- Ninjato: two-handed jump attacks are the katana jumps. Without lock-on the
+  Ash of War always dashes left.
+- Wrath of the Stormlord: the Ash of War is a single hit. Press its heavy
+  follow-up during the second half of the dash, while you're still
+  invisible.
+- Smithscript Rosary: Smithscript Arsenal used from a standstill is a short
+  anchored stance, like Endure.
+- Beowulf: rolling, backstep and running attack chains need the next light
+  attack about 1.0-1.4 s in, as in McKenyu's pack.
+
+
+=== KNOWN ISSUES ===
+
+- Nightreign Movement: the surge sprint may not start while two-handing.
+  We are looking into it.
+- Fang of Fading Thunder: while you idle with a Fang two-handed or
+  powerstanced, a Mimic Tear or co-op partner holding a Fang shows the
+  standard stance on your screen.
+- Deflect Me Not is experimental in the installer. DMN problems: please
+  report them to Rei Jr.; everything else to us.
+- Deflect Me Not + Nightreign Movement: with Wylder picked, DMN's R1+R2+Y
+  moveset toggle shares buttons with Onslaught Stake. Switch Wylder off at
+  a Site of Grace to use the toggle.
+- Smithscript Rosary: one player saw its attacks replaced by Spiked Caestus
+  moves. If this happens to you, please report it.
+- Ruyi Jingu Bang: if the Pillar or Thrust stance skill still takes away
+  your HP, please report it.
+- Ninjato: if the two-handed heavy attacks build up no poison, please
+  report it.
+- Raikiri: if you still sink into the ground during the Ash of War
+  follow-ups or the two-handed heavies, please report which move and
+  where.
+- Murasama: if a flame trail stays on screen until you die, please report
+  it and say which Infinite Durations edition you use.
+- Ninjato: lock-on + sprint + Ash of War gives a plain step instead of the
+  teleport step.
+- Rakuyo: with too little FP, the one-handed Ash of War plays the spin's
+  failed swing instead of the self-stab.
+- Phoenix Caller: ripostes, backstabs and wall-bounce recoils use the class
+  default animations, not McKenyu's own.
+- Raikiri, Rekkaryujin, Ninjato, Murasama, Black Mortal Blade and
+  Suncatcher: the two-handed guard lacks McKenyu's built-in deflect and
+  works like a normal guard.
+- Ash of War: Raging Beast, put on Beast Claws, performs the Ninjato's
+  Shadow Talon.
+- Fang of Fading Thunder: the ultimate uses a normal dash zoom instead of
+  the dramatic camera zoom.
+- Great Sage and Yaksha armor pieces you already own are still invisible
+  when worn.
+- No item description on Wylder's Greatsword, Guardian's Greatshield,
+  Suncatcher, Guardian's Halberd, Fang of Fading Thunder, Lucent Ferrum,
+  Rose Saber, Murasama and Pale Knight Gunblade.
+- Martial Arts, Firebending, Earthbending and Meteor Fists: greases add
+  damage, but the fists show no grease glow.
+- Dark Moon Ring: two-handed from the left hand, the Ash of War plays the
+  ring form's one-handed skill, not the sword's two-handed one.
+- Beowulf: no fighting stance after attacks, as in McKenyu's pack.
+- Marais Executioner's Sword (Clever's): the drill hits many times for small
+  numbers, as in Clever's 26.0 release.
+
+
+=== INSTALL ===
+
+Easiest: run the v6.5 Auto Installer from the Files tab. It needs this
+zip and walks you through everything below, for any combination.
+
+By hand (the merge on its own):
+1. Install The Convergence 3.0.2 and launch it once.
+2. Download Clever's Moveset Modpack 26.2 from his Nexus page. Copy his
+   parts folder and his chr\c0000_a00_hi.anibnd.dcx into your Convergence
+   mod folder (keep the folders).
+3. Download McKenyu's Moveset Modpack 1.4 from his Nexus page and unpack
+   it. From his mod folder copy into your Convergence mod folder: the
+   parts folder, param\systemparam\systemparam.parambnd.dcx,
+   sd\enus\cs_c8000.bnk and sfx\sfxbnd_commoneffects_dlc01.ffxbnd.dcx
+   (keep the folders).
+4. In your Convergence mod\parts folder, copy wp_a_5071.partsbnd.dcx three
+   times, named wp_a_5071_l.partsbnd.dcx, wp_a_17501.partsbnd.dcx and
+   wp_a_17501_l.partsbnd.dcx.
+5. Drop this archive's mod folder over your Convergence install,
+   overwriting when asked. Do this step last.
+6. Launch through your normal Convergence launcher, offline. The
+   regulation.bin edit trips Easy AntiCheat.
+
+Nightreign Movement, Seamless Co-op, Lucy, Infinite Durations, Infinite
+Arrows, ERCapacityExpansion and Deflect Me Not: use the Auto Installer.
+
+Updating from v6.0 - v6.4 by hand: do steps 3 to 5 (McKenyu's 1.4 files
+replace his older ones). If you use any of the options above, update with
+the Auto Installer instead.
+Updating from v5.0 or older: full replacement, back up your saves first.

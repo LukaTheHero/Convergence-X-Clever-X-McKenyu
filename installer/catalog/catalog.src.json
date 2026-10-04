@@ -1,0 +1,420 @@
+{
+  "format": 1,
+  "_doc": "Hand-edited SOURCE of the installer catalog (no hashes here except third-party trust anchors). The pipeline (release.py) reads it, measures every file itself and writes dist\\<tag>\\catalog.json + generated\\catalog.iss. Schema: C:\\$MD\\EldenRing\\merge\\v65\\INSTALLER_V65_DESIGN.md section 3.2. Path tokens: ${WS}=C:\\00000ConvergenceER\\ClaudeWorkspace, ${CCM}=${WS}\\clever_x_convergence_x_mckenyu, ${V65}=${CCM}\\v65, ${INST}=${V65}\\installer. Keys starting with _ are comments.",
+
+  "release": {
+    "version": "6.5.0",
+    "version_short": "v6.5",
+    "tag": "v6.5.0",
+    "mod_title": "Convergence X Clever X McKenyu v6.5",
+    "publisher": "canalpa",
+    "nexus_url": "https://www.nexusmods.com/eldenring/mods/10388",
+    "installer_base_name": "Convergence X Clever X McKenyu V6.5 - Auto Installer",
+    "main_zip_name": "Convergence X Clever X McKenyu V6.5 - Main Files.zip",
+    "changelog_source": "${INST}\\catalog\\CHANGELOG_v6.5.txt",
+    "changelog_dest": "CXCXM_CHANGELOG_v6.5.txt",
+    "github": {
+      "owner": "LukaTheHero",
+      "repo": "Convergence-X-Clever-X-McKenyu",
+      "visibility_until_publish": "private",
+      "release_state_until_publish": "draft",
+      "base_urls": ["https://github.com/LukaTheHero/Convergence-X-Clever-X-McKenyu/releases/download/"]
+    }
+  },
+
+  "inputs": {
+    "rc_build_root": "${V65}\\opus\\build",
+    "framework": "${V65}\\opus\\work",
+    "base_dir": "${V65}\\opus\\build\\base",
+    "base_roots_extra": ["${CCM}\\v62\\opus\\build\\stage_mod"],
+    "nrm_layer_pattern": "${V65}\\opus\\build\\nrm_{rc}",
+    "nrm_layer_alternates": ["${V65}\\opus\\build\\nrm_{rc}_T2W", "${V65}\\opus\\build\\nrm_{rc}_T2"],
+    "nrm_tier": "T2W",
+    "_nrm_layer_alternates_doc": "rc8 switch prep 2026-10-03 (review HIGH): the RC's NRM layer = the layer the NRM option ships = the first of nrm_layer_pattern + these whose NRM_LAYER_REPORT.json has the tier nrm_tier (T2W = Wylder on: the option title promises Wylder's skills; the RC8 lane builds it as nrm_<rc>). A layer of another tier is refused by the package check (rcinputs.nrm_package_problems; --final always). beta.16 RCs (rc1-rc7) only have nrm_<rc>_T2, so they are TEST builds only.",
+    "dmn_layer_pattern": "${V65}\\opus\\build\\dmn_{rc}",
+    "dmn_nrm_layer_pattern": "${V65}\\opus\\build\\dmn_nrmw_{rc}",
+    "dmn_nrm_layer_alternates": ["${V65}\\opus\\build\\dmn_nrm_{rc}"],
+    "_dmn_layer_doc": "Final pass 2026-10-03: the Deflect Me Not layers (dmn\\dmn_layer.py) of the RC: plain = on the RC chain, nrm = on the NRM layer + the chain. Each must report fail [] and be made from that chain (rcinputs.py). They ship only the files their DMN_LAYER_REPORT.json shipping_files list; Rei Jr.'s files that a layer ships unchanged come from the player's DMN download (archive dmn). DMN + NRM layer = the first of dmn_nrm_layer_pattern + dmn_nrm_layer_alternates made from exactly the NRM layer + the chain (rc8: dmn_nrmw_rc8 on nrm_rc8 = Wylder on; the rc3-rc7 test builds: dmn_nrm_<rc>).",
+    "dmn_ercap_only_layers": ["nrm"],
+    "_dmn_ercap_only_doc": "Luka 2026-10-03 (after field-testing RC8 + Wylder + DMN + ERCap: 'everything positive'): players who tick BOTH Deflect Me Not and Nightreign Movement get Nightreign 0.2 WITH Wylder, and the installer adds ERCapacityExpansion automatically (the D rule below). That DMN + NRM layer (dmn_nrmw_<rc>, made on the Wylder NRM layer itself) is over the old animation wall by design: its report fails exactly G-WALL + G-VOL-REC and it is accepted ONLY as an ERCap state - its DMN_ERCAP_STATE.json (dmn\\dmn_ercap_state.py) accepted, made from the same roots, the same manifest, M2 last index in 32,668..65,433, every shipped file unchanged (rcinputs.dmn_layer_problems, ported from deploy_v65.py --dmn-nrmw). This list names the DMN layers ('plain', 'nrm') that may be such an ERCap-only state; the pipeline then requires every combination that uses one to measure over the no-DLL limit (so the installer forces the DLL) and every such combination to carry a D rule (its reason). The Wylder-off sibling arrangement of the rc8 switch prep (nrm_<rc>_T2 + dmn_nrm_<rc>) was retired the same day.",
+    "nrm_menu_composer": "${V65}\\opus\\build\\lucy_nrm_menu.py",
+    "nrm_menu_tested_pattern": "${V65}\\opus\\build\\_lucy_nrm_menu\\{rc}",
+    "_nrm_menu_doc": "rc8 switch prep 2026-10-03: NRM 0.2 ships menu\\hi\\01_common.* (its skill icons), the same two files Lucy ships (her icon). Lucy + NRM gets Lucy's pair with NRM's changed layout + texture put in, made by the RC lane's own composer (the files deploy_v65.py installs for the field test); the pipeline adopts the composed pair from nrm_menu_tested_pattern when its sources are exactly this build's, else runs the composer into work\\lucy_nrm_menu\\<rc>\\ (products.ensure_nrm_menu).",
+    "infdur_ack": [
+      9000501, 9000502, 9000503, 9000504, 9000505, 9000506, 9000507, 9000508, 9000509, 9000602, 9000603, 9000604,
+      9000606, 9000607, 9000608, 9000609, 9000690, 9000691, 9000692, 9000693, 9000694, 9000695, 9000696, 9000697,
+      9000698, 9000699, 9001000, 9001001, 9001002, 9001003, 9001004, 9001005, 9001006, 9001007, 9001008, 9001009,
+      9001010, 9001011, 9001012, 9001013, 9001014, 9001015, 9001016, 9001017, 9001018, 9001019, 9001100, 9001101,
+      9001102, 9001103, 9001104, 9001105, 9001106, 9001107, 9001108, 9001109, 9001110, 9001111, 9001112, 9001113,
+      9001114, 9001115, 9001116, 9001117, 9001118, 9001119, 9001200, 9001201, 9001202, 9001203, 9001204, 9001205,
+      9001206, 9001207, 9001208, 9001209, 9001600, 9001601, 9001602, 9001603, 9001604, 9001605, 9001606, 9001607,
+      9001608, 9001609, 9001690, 9001691, 9001692, 9001693, 9001694, 9001695, 9001696, 9001697, 9001698, 9001699,
+      9002000, 9002001, 9002002, 9002003, 9002004, 9002005, 9002006, 9002007, 9002008, 9002009, 9002100, 9002101,
+      9002102, 9002103, 9002104, 9002105, 9002106, 9002107, 9002108, 9002109, 9002200, 9002201, 9002202, 9002203,
+      9002204, 9002205, 9002206, 9002207, 9002208, 9002209, 9002300, 9002301, 9002302, 9002303, 9002304, 9002305,
+      9002306, 9002307, 9002308, 9002309, 9002400, 9002401, 9002402, 9002403, 9002404, 9002405, 9002406, 9002407,
+      9002408, 9002409, 9002500, 9002501, 9002502, 9002503, 9002504, 9002505, 9002506, 9002507, 9002508, 9002509,
+      9002600, 9002601, 9002602, 9002603, 9002604, 9002605, 9002606, 9002607, 9002608, 9002609, 9002700, 9002701,
+      9002702, 9002703, 9002704, 9002705, 9002706, 9002707, 9002708, 9002709, 9002800, 9002801, 9002802, 9002803,
+      9002804, 9002805, 9002806, 9002807, 9002808, 9002809, 9002810, 9002811, 9002812, 9002813, 9002814, 9002815,
+      9002816, 9002817, 9002818, 9002819, 9002900, 9002901, 9002902, 9002903, 9002904, 9002905, 9002906, 9002907,
+      9002908, 9002909, 9002910, 9002911, 9002912, 9002913, 9002914, 9002915, 9002916, 9002917, 9002918, 9002919,
+      9003000, 9003001, 9003002, 9003003, 9003011, 9003012, 9003013, 9003021, 9003031, 9003041, 9003042, 9003043,
+      9003051, 9003061, 9003071, 9003081, 9003082, 9003083, 9003084, 9003085, 9003086, 9003091, 9003101, 9003111,
+      9950210, 9950211, 9950212, 9950213, 9950214, 9950215, 9950216, 9950217, 9950218, 9950219, 9950220, 9950221,
+      9950222, 9950223, 9950224, 9950225, 9950280, 9950281, 9950282, 9950283, 9950504, 9950505, 9950510, 9950511,
+      9950512, 9950513, 9950520, 9950521, 9950522, 9950523, 9950524, 9950525, 9950710, 9950741, 9950742, 9950750,
+      9950751, 9950752, 9950753, 9950754, 9950755, 9950756, 9950757, 9950758, 9950759, 9950760, 9950761, 9950762,
+      9950763, 9950764, 9950765, 9950766, 9950767, 9950768, 9950769, 9950770, 9950771, 9950772, 9950773, 9950774,
+      9950775, 9950776, 9950777, 9950778, 9950779, 9950780, 9950781, 9950782, 9950783, 9950784, 9950785, 9950786,
+      9950787, 9950788, 9950789, 9950790, 9950791, 9950792, 9950793, 9950794, 9950795, 9950796, 9950797, 9950798,
+      9950799, 9950800, 9950801, 9950802, 9950803, 9950804, 9950805, 9950806, 9950807, 9950808, 9950809, 9950810,
+      9950811, 9950812, 9950813, 9950814, 9950815, 9950816, 9950817, 9950818, 9950819, 9950820, 9950821, 9950822,
+      9950823, 9950824, 9950825, 9950826, 9950827, 9950828, 9950829, 9950830, 9950831, 9950832, 9950833, 9950834,
+      9950835, 9950836, 9950837, 9950838, 9950839, 9950840, 9950841, 9950842, 9950843, 9950844, 9950845, 9950846,
+      9950847, 9950848, 9950849, 9950860, 9950861, 9950863, 9950864
+    ],
+    "_infdur_ack_doc": "SpEffect ids with a finite duration that the RC regulation adds and Infinite Durations must NOT make infinite (accepted on every build, merged with release.py --infdur-ack): DMN's 240 rows (F64f, inert without DMN; DMN_LAYER_DESIGN.md 3.1): every new SpEffect row of rc7's regulation except 800000711 (which merge_final.json lists, like 800000710), measured 2026-10-03 by the pipeline's own new-row check (241 new rows, 70 with a finite duration). rc8 switch prep 2026-10-03: + Nightreign Movement 0.2's 139 helper rows that RC8's F68n adds (9950210-9950864: collision receipts, animation / sound / visual event carriers, ability cooldown events; 0.01-1.5 s; inert without NRM) - making them infinite would break NRM's skills. MEASURED on rc8 by the same check: 386 new rows, 209 finite; with these every finite one is listed or acknowledged.",
+    "_lucy_doc": "Lucy's workspace folder and build recipe are specific to the build PC: pipeline\\cfg.py reads them from the LOCAL file catalog\\lucy_build.local.json (keys root, recipe; never pushed). The two patterns below name the per-RC base and build folders inside that workspace.",
+    "lucy_base_pattern": "merge_v65{rc}{suffix}",
+    "lucy_build_pattern": "lucy_merge_v65{rc}{suffix}",
+    "infdur_vendor": "${INST}\\pipeline\\vendor\\infdur",
+    "infdur_original": "${WS}\\clever_x_convergence_x_mckenyu_INF_DURATIONS\\v64\\work",
+    "packcheck": "${V65}\\opus\\work\\_lib\\packcheck.py",
+    "convergence_pristine": "${CCM}\\v60\\sources\\convergence_302\\ConvergenceER",
+    "convergence_official_manifest_src": "${CCM}\\v64\\installer\\upstream\\convergence_302_manifest_v2.json",
+    "convergence_official_manifest_sha256": "823e8254eef719d7cd189a7ff0e2d70a527752083fa7e4dbb8bb4bf538253ab3",
+    "vanilla_chr_for_wall": "C:\\00000ConvergenceER\\Elden Ring Vanilla Testing\\GameSecond\\chr",
+    "golden_sandbox_readonly": "${CCM}\\v64\\installer\\sb\\_golden\\ConvergenceER"
+  },
+
+  "wall": {
+    "_doc": "Metric = size of the c0000 clip list (union of every TAE action id and every HKX animation id, sorted by bank*1e6+sub) over the 14 c0000 anibnds + c0000_dlc01/dlc02 (probes\\ERCAP_SEAMLESS.md section C). Every entry must sit below the signed-16 wall, so the list may hold at most 32768 entries without ERCapacityExpansion. With it, at most 65534; we keep a margin.",
+    "limit_without_dll": 32768,
+    "limit_with_dll": 65000,
+    "dll_component": "ercap"
+  },
+
+  "components": [
+    {
+      "id": "main", "switch": "", "kind": "R",
+      "title": "Convergence X Clever X McKenyu v6.5",
+      "desc": "The merge itself (always installed).",
+      "source": "nexus", "archives": ["main_v65"], "product": "main", "hot": false,
+      "credit": "Convergence X Clever X McKenyu by Canalpa (Luka) - nexusmods.com/eldenring/mods/10388"
+    },
+    {
+      "id": "conv", "switch": "", "kind": "R",
+      "title": "The Convergence 3.0.2",
+      "desc": "Your existing Convergence install (checked file by file, never downloaded).",
+      "source": "installed", "archives": [], "product": null, "hot": false,
+      "credit": "The Convergence by The Convergence Team - convergencemod.com"
+    },
+    {
+      "id": "clever", "switch": "", "kind": "R",
+      "title": "Clever's Moveset Modpack 26.2",
+      "desc": "Required. Your own download from Clever's Nexus page.",
+      "source": "nexus", "archives": ["clever_262"], "product": "clever_parts", "hot": false,
+      "credit": "Clever's Moveset Modpack by clevererraptor6 - nexusmods.com/eldenring/mods/1928"
+    },
+    {
+      "id": "mck", "switch": "", "kind": "R",
+      "title": "McKenyu's Modpack 1.4",
+      "desc": "Required. Your own download from McKenyu's Nexus page (a .rar file; Setup unpacks it itself).",
+      "source": "nexus", "archives": ["mck_14"], "product": null, "hot": false,
+      "credit": "McKenyu's Modpack by McKenyu - nexusmods.com/eldenring/mods/8762"
+    },
+    {
+      "id": "lucy", "switch": "LUCY", "kind": "T", "default": 0,
+      "title": "Lucy - playable Lucy character + Chevaleresse armor",
+      "desc": "Downloaded from GitHub. Character creator: Body Type B, then Base Template \"Lucy\" and Musculature \"Lucy\". Her armor is sold by Merchant Kale (McKenyu's Shop menu).",
+      "_desc_doc": "Final repair 2026-10-03 (release-kit review LOW): the player gets the creator steps and the armor seller here, as v6.4's description and Lucy's own page 11128 give them.",
+      "source": "github", "archives": [], "product": "lucy", "hot": true,
+      "detect_files": ["mod\\parts\\am_m_3360.partsbnd.dcx", "mod\\parts\\bd_f_3360.partsbnd.dcx",
+                       "mod\\parts\\bd_m_3360.partsbnd.dcx", "mod\\parts\\lg_m_3360.partsbnd.dcx"],
+      "_detect_files_doc": "Repair 3 (verifier 4 D2): Lucy is detected only by these names (her own armor set 3360, which no other mod uses) or by the sha256 of her files (H rules, made by the pipeline). Her other parts carry the base game's female body/face/hair names (bd_f_0000, fc_f_0000, ...), which body, face and hair replacers use too: those names alone never mean Lucy, and such a file is another mod's (moved or kept, never deleted as Lucy's).",
+      "credit": "Lucy Character and Chevaleresse Armor by Canalpa (Luka) - nexusmods.com/eldenring/mods/11128",
+      "credits_extra": [
+        "Lucy's armor: Chevaleresse II by yurica, from the Skyrim SE ports by THBG0 (SMP SE) and by yurica, THBossGamer, Jeir and docteure (CBBE BodySlide)",
+        "Lucy's hair: KS Hairdos by Kalilies and Stealthic, via the HDT SMP version by ousnius",
+        "Lucy's body mesh: based on CBBE by Caliente and ousnius"
+      ],
+      "_credits_extra_doc": "Release prep 2026-10-03 (review MEDIUM): the third-party authors whose work Lucy's files are built from, as Lucy's own Nexus page 11128 credits them. Each line is an extra credit row of this option (Credits page, CXCXM_INSTALLED.txt, README, CREDITS.md, LICENSE-NOTES.md)."
+    },
+    {
+      "id": "nrm", "switch": "NRM", "kind": "T", "default": 0,
+      "title": "Nightreign Movement 0.2 - sprint, wall jumps, ledge climbing and Wylder's skills",
+      "desc": "Needs your own Nightreign Movement 0.2 download (Convergence edition) from neiroxgod's Nexus page; merged files from GitHub. With DMN, ERCapacityExpansion is added too.",
+      "_desc_doc": "2026-10-03 (Luka's DMN + Wylder decision): DMN + NRM keeps Wylder and needs ERCapacityExpansion, which the installer adds by itself (the D rule). The Options page gives a description two lines, so the text stays short (tests\\dryrun.py layout: no CLIPPED).",
+      "source": "nexus", "archives": ["nrm_02"], "product": "nrm", "hot": true,
+      "natives": ["nrm"],
+      "user_config": [{"dest": "mod\\dll\\NightreignMovement.ini", "from": "nrm_layer:_installer\\first_install\\dll\\NightreignMovement.ini"}],
+      "_source_doc": "Release prep 2026-10-03 (Luka): Nightreign Movement is on Nexus since 0.2 'Wylder' (eldenring/mods/11174). Like every other author's mod, the player downloads it from its own page (consistency, and the downloads count for its author); Setup takes neiroxgod's unchanged files from that download (archive nrm_02) and the merged NRM files from GitHub. The installer-only copies of beta.16 on canalpa.com were retired the same day. The RC's NRM layer must be built from exactly that zip (package_version + sha256, pipeline\\rcinputs.py).",
+      "credit": "Nightreign Movement by neiroxgod - nexusmods.com/eldenring/mods/11174"
+    },
+    {
+      "id": "infdur", "switch": "INFDUR", "kind": "C", "default": 0,
+      "title": "Infinite Durations",
+      "desc": "Buffs never expire. Downloaded from GitHub. With Lucy it is built on Lucy's regulation.",
+      "states": [
+        {"code": "none", "title": "None - buffs expire normally"},
+        {"code": "v1", "title": "Infinite Durations Regulation - Canalpa"},
+        {"code": "v2", "title": "Infinite Durations Regulation - Weapon Buffs Only"},
+        {"code": "v3", "title": "Infinite Durations Regulation - All Buffs and AoW"},
+        {"code": "v4", "title": "Infinite Durations Regulation - Everything"}
+      ],
+      "source": "github", "archives": [], "product": "infdur", "hot": true,
+      "credit": "Infinite Durations by Canalpa (Luka)"
+    },
+    {
+      "id": "arrows", "switch": "ARROWS", "kind": "T", "default": 0,
+      "title": "Infinite Arrows and Bolts - arrows and bolts are never used up",
+      "desc": "Downloaded from GitHub.",
+      "source": "github", "archives": [], "product": "arrows", "hot": false,
+      "natives": ["arrows"],
+      "files": [{"dest": "mod\\dll\\infinite_arrows.dll", "from_zip": "${WS}\\infinite_arrows\\v12\\dist\\Infinite Arrows and Bolts - Elden Ring Patch 1.17 - v1.2.zip", "member": "infinite_arrows.dll", "expect_md5": "1800308fde6e8e9c5692c9eb577f9a6b"}],
+      "credit": "Infinite Arrows and Bolts v1.2 (Canalpa rebuild for Patch 1.17) - nexusmods.com/eldenring/mods/10389",
+      "credits_extra": [
+        "Infinite Arrows and Bolts is built on fromsoftware-rs by vswarte (MIT or Apache-2.0); the idea comes from the original Infinite arrows and bolts by its author (nexusmods.com/eldenring/mods/9032)"
+      ],
+      "licenses": [
+        {"name": "fromsoftware-rs-MIT.txt", "from": "${INST}\\upstream\\licenses\\fromsoftware-rs-LICENSE-MIT.txt", "expect_sha256": "1d67a6a4aa0d5a0b69c03a0f57449838ed637bbb59ed5229b12205b559c8651e", "what": "infinite_arrows.dll is compiled with vswarte's fromsoftware-rs (Copyright (c) 2025 Vincent Swarte; MIT OR Apache-2.0), used here under the MIT License"}
+      ],
+      "_credits_extra_doc": "rc8 switch prep 2026-10-03 (review LOW): the DLL's own README and Nexus page 10389 credit vswarte (fromsoftware-rs, which the DLL is compiled with; the licence text is LICENSE-MIT of the fromsoftware-rs checkout it was built from, commit 59fbd3b) and the author of the original mod 9032 (the idea). licenses[] = a licence text the repo carries in LICENSES/ (emit_json.repo_files) with a LICENSE-NOTES line."
+    },
+    {
+      "id": "seamless", "switch": "SEAMLESS", "kind": "T", "default": 0, "experimental": false,
+      "title": "Seamless Co-op - play the merge together",
+      "_title_doc": "No '(experimental)' in titles: the installer appends ' (experimental)' itself when experimental is true (contract 3.2).",
+      "_experimental_doc": "Final repair 2026-10-03: no longer experimental. INSTALLER_V65_DESIGN.md kept Seamless and ERCap experimental only until Luka's Seamless tests passed; they passed on 2026-10-02 (ERCAP_TEST_CARD launch 0 + 3, Part B real play, a real 2-PC session). Only DMN stays experimental.",
+      "desc": "Needs your own Seamless Co-op download from Nexus. Both players need the same merge version and options.",
+      "source": "nexus", "archives": ["seamless"], "product": "seamless", "hot": false,
+      "fields": ["cooppassword"],
+      "user_config": [{"dest": "SeamlessCoop\\ersc_settings.ini", "from": "archive:seamless:SeamlessCoop\\ersc_settings.ini"}],
+      "credit": "Seamless Co-op by Yui (LukeYui) - nexusmods.com/eldenring/mods/510"
+    },
+    {
+      "id": "ercap", "switch": "ERCAP", "kind": "T", "default": 0, "experimental": false,
+      "title": "ERCapacityExpansion - raises the game's animation limit",
+      "_experimental_doc": "Final repair 2026-10-03: no longer experimental here (see seamless): field-tested by Luka on 2026-10-02 alone, with Seamless Co-op and in a 2-PC session. Its author names the release v0.3.0-experimental.3; that is his version label, kept in the credit text below.",
+      "desc": "From the author's GitHub release (copy on ours). Added automatically when your options need it (Deflect Me Not together with Nightreign Movement).",
+      "_desc_doc": "2026-10-03 (Luka's DMN + Wylder decision): the D rule (DMN + NRM) and the animation wall switch it on by themselves; the Options page then shows it ticked and greyed with the reason, and a later run that drops DMN or NRM removes it again unless the player ticked it himself (marker AUTO_ON).",
+      "source": "github", "archives": [], "product": "ercap", "hot": false,
+      "natives": ["ercap"],
+      "files": [
+        {"dest": "mod\\dll\\CapacityExpansion.dll", "from_zip": "${V65}\\opus\\work\\_research\\ercap\\release\\ERCapacityExpansion_v0.3.0-experimental.3.zip", "member": "CapacityExpansion.dll",
+         "expect_sha256": "991cde348b8f86a700804eaae7101f1eca47c565da420ea4e2b41ccc93a2c708",
+         "upstream_url": "https://github.com/KamiyamaShiki0704/ERCapacityExpansion/releases/download/v0.3.0-experimental.3/CapacityExpansion.dll"},
+        {"dest": "mod\\dll\\licenses\\ERCapacityExpansion\\LICENSE.txt", "from_zip": "${V65}\\opus\\work\\_research\\ercap\\release\\ERCapacityExpansion_v0.3.0-experimental.3.zip", "member": "LICENSE"}
+      ],
+      "zip_anchor": {"path": "${V65}\\opus\\work\\_research\\ercap\\release\\ERCapacityExpansion_v0.3.0-experimental.3.zip", "expect_sha256": "c35595f90a64403584d94a2a751c84004f739de930d59af0559314b924ff83d0"},
+      "credit": "ERCapacityExpansion v0.3.0-experimental.3 by KamiyamaShiki0704 (MIT License, Copyright (c) 2026 KamiyamaShiki0704) - github.com/KamiyamaShiki0704/ERCapacityExpansion"
+    },
+    {
+      "id": "dmn", "switch": "DMN", "kind": "T", "default": 0, "experimental": true,
+      "title": "Deflect Me Not (DMN) - deflects and movesets by Rei Jr.",
+      "desc": "Needs your own DMN download from Rei Jr.'s Nexus page; the merged files come from GitHub. DMN bugs: Rei Jr.; everything else: Canalpa.",
+      "source": "nexus", "archives": ["dmn"], "product": "dmn", "hot": true,
+      "_doc": "Final pass 2026-10-03: DMN enabled as EXPERIMENTAL (Luka 2026-10-01 'you decide'; field-confirmed working with no DLL on RC5 and on RC7 + NRM; Rei Jr.'s permission 2026-10-02). The layer files come from build\\dmn_<rc> (plain) / build\\dmn_nrmw_<rc> (with NRM 0.2 WITH Wylder, ERCap-only: Luka's field test 2026-10-03 'everything positive'); Rei handles DMN bugs, we handle the rest.",
+      "credit": "Deflect Me Not by Rei Jr. - nexusmods.com/eldenring/mods/4138 (experimental here; DMN bugs go to Rei Jr., everything else to Canalpa)"
+    }
+  ],
+
+  "archives": [
+    {
+      "id": "main_v65", "component": "main", "enabled": true,
+      "title": "Convergence X Clever X McKenyu V6.5 - Main Files",
+      "author": "Canalpa (Luka)",
+      "nexus_url": "https://www.nexusmods.com/eldenring/mods/10388?tab=files",
+      "hint": "MANUAL DOWNLOAD of the Main Files on the Files tab of the merge's Nexus page.",
+      "name_hints": ["clever x mckenyu", "main files"],
+      "mode": "P", "must_verify": false,
+      "reference": {"kind": "built", "_doc": "made by pipeline\\mainzip.py; pinned by size + sha256"}
+    },
+    {
+      "id": "clever_262", "component": "clever", "enabled": true,
+      "title": "Clever's Moveset Modpack 26.2",
+      "author": "clevererraptor6",
+      "nexus_url": "https://www.nexusmods.com/eldenring/mods/1928?tab=files",
+      "hint": "Download exactly 26.2 with MANUAL DOWNLOAD on the Files tab. If 26.2 is no longer at the top, it is under OLD FILES.",
+      "name_hints": ["clever", "moveset", "moveset modpack"],
+      "_name_hints_doc": "Archives found by name are tried best match first (the summed length of the matching hints), newest first among equals: Clever's own 'Clever's Moveset Modpack ...' zip outranks any other '... Moveset ...' mod (repair 1, defect D5). Names are compared as words, so Nexus's own name 'moveset_modpack 26.2 1928 ...zip' matches 'moveset modpack', and the pipeline adds the Nexus mod id 1928 as a hint (repair 2, verifier 3 D2).",
+      "mode": "P", "must_verify": false,
+      "reference": {"kind": "folder", "path": "${CCM}\\v60\\sources\\clever_262"},
+      "_doc": "Members = his 50 parts (never bundled) + any MAIN content identical to a file of his pack (measured: chr\\c0000_a00_hi.anibnd.dcx)."
+    },
+    {
+      "id": "mck_14", "component": "mck", "enabled": true,
+      "title": "McKenyu's Modpack 1.4",
+      "author": "McKenyu",
+      "nexus_url": "https://www.nexusmods.com/eldenring/mods/8762?tab=files",
+      "_nexus_url_doc": "CONFIRMED: Luka gave this page himself on 2026-10-01 (his 1.4 download is 'mckenyu modpack 8762 1.4 2026-09-20T17-34Z gn8dtBE9A.rar', the Nexus app's '<file> <mod id> <version> <date>' name).",
+      "hint": "Download McKenyu's Modpack version 1.4 with MANUAL DOWNLOAD on the Files tab of his Nexus page. It is a .rar file: keep it as it is, Setup unpacks it itself.",
+      "name_hints": ["mckenyu", "mckenyu modpack"],
+      "_name_hints_doc": "Names and hints are compared as words (blanks for '_', '-', '.'), and the Nexus mod id of nexus_url (8762) is added as a hint of its own by the pipeline: the real download 'mckenyu modpack 8762 1.4 ...rar' outranks any other 'McKenyu ...' download (verifier 3, defect D2).",
+      "mode": "P", "must_verify": true,
+      "verify_members": ["Start_McKenyu_Modpack.bat"],
+      "_verify_members_doc": "Checked, never installed: only McKenyu's own pack has his launcher (1.4 has it too, measured). Every v6.3/v6.4 merge package carried his mod files byte for byte, so without this member an (extracted) merge zip would pass as his download (repair 1, defect D2).",
+      "reference": {"kind": "rar", "path": "${V65}\\sources\\mckenyu_14\\mckenyu modpack 8762 1.4 2026-09-20T17-34Z gn8dtBE9A.rar", "pin_whole_archive": true,
+                    "expect_sha256": "29522a2ef1d3eb85f46e28ec478776d0321ecce18d9671256ee17af1e4c6e39a"},
+      "_reference_doc": "A copy of Luka's own download (his Downloads folder, only read). RAR5: the pipeline unpacks it once (Windows tar, 7-Zip as fallback) into work\\refcache\\<sha16> and reads it like a folder. The installer unpacks it with Windows tar (bsdtar 3.8.8 reads RAR5, MEASURED 2026-10-03: 139 files, 728,935,369 B, 6.4 s) and falls back to Inno's ExtractArchive (ArchiveExtraction=full, is7z.dll: the same 139 files byte for byte, 4.1 s, MEASURED).",
+      "_doc": "must_verify: v6.4 bundled McKenyu's files, so v6.4 users never downloaded them; v6.5 asks for his download once per folder (Luka's decency rule). v6.5 is built on 1.4 (85 paths come from this download, m30_installer_list.json)."
+    },
+    {
+      "id": "seamless", "component": "seamless", "enabled": true,
+      "title": "Seamless Co-op",
+      "author": "Yui (LukeYui)",
+      "nexus_url": "https://www.nexusmods.com/eldenring/mods/510?tab=files",
+      "hint": "Download Seamless Co-op from its Nexus page (any recent version; tested with 2.0.1).",
+      "name_hints": ["seamless"],
+      "mode": "V", "must_verify": false,
+      "members": ["SeamlessCoop\\ersc.dll", "SeamlessCoop\\ersc_settings.ini", "SeamlessCoop\\locale\\english.json", "SeamlessCoop\\crashpad\\crashpad_handler.exe"],
+      "_members_doc": "dest = the same relative path inside the Convergence folder; all four must exist in the player's archive (1.9.9 and 2.0.1 have exactly these + ersc_launcher.exe, MEASURED; the launcher is not installed: Convergence starts Seamless through its own me3 profile).",
+      "reference": {"kind": "zip", "path": "${V65}\\sources\\seamless_201\\Seamless Co-op v2.0.1 510 2.0.1 2026-09-02T23-30Z luvfLWq6V.zip", "pin_whole_archive": true, "tested_version": "2.0.1",
+                    "expect_sha256": "848ae27e1c77217590dac401c012a17d9b4f05b9b9a24aa33af54d8d7b8ba2a1"},
+      "_doc": "mode V: any version is accepted (Seamless updates often and we copy it unchanged); the copied files' hashes are taken from the player's archive at run time. The current version 2.0.1 (a copy of Luka's download; field-tested 2026-10-02 with the merge, with ERCapacityExpansion, and in a real 2-PC session) is the 'tested version' signal."
+    },
+    {
+      "id": "dmn", "component": "dmn", "enabled": true,
+      "title": "Deflect Me Not - ConXCleverXMcKenyu EXP37.1",
+      "author": "Rei Jr.",
+      "nexus_url": "https://www.nexusmods.com/eldenring/mods/4138?tab=files",
+      "hint": "Download Rei Jr.'s DMN file for this merge, 'DMN-ConXCleverXMcKenyu' EXP37.1, with MANUAL DOWNLOAD on the Files tab of the Deflect Me Not page (keep the zip as it is).",
+      "name_hints": ["dmn", "deflect me not", "conxclevermckenyu"],
+      "mode": "P", "must_verify": true,
+      "reference": {"kind": "zip", "path": "${V65}\\sources\\dmn_exp37_1\\DMN-ConXCleverXMcKenyu 4138 EXP37.1 2026-09-15T02-19Z b0gaS9wfK.zip", "pin_whole_archive": true,
+                    "expect_sha256": "3ecde5ba7898a2d90a4c4afd6b373d5365e35836e37ccecc81647699d19d3871"},
+      "_doc": "The exact file the DMN layers were built from (G-SRC pin, DMN_LAYER_REPORT.json provenance). must_verify: DMN is Rei Jr.'s mod; the player's own download is checked once per folder even when every DMN file is in place. Its sd\\enus\\cs_main.bnk (and, without NRM, sfx\\sfxbnd_commoneffects_dlc02.ffxbnd.dcx) are installed from this download unchanged; the merged DMN files come from GitHub."
+    },
+    {
+      "id": "nrm_02", "component": "nrm", "enabled": true,
+      "title": "Nightreign Movement 0.2 Wylder (Convergence 3.0.2 edition)",
+      "author": "neiroxgod",
+      "nexus_url": "https://www.nexusmods.com/eldenring/mods/11174?tab=files",
+      "_nexus_url_doc": "CONFIRMED: Luka gave this page on 2026-10-03 (never probe it).",
+      "hint": "Download Nightreign Movement 0.2 Wylder, the Convergence 3.0.2 edition, with MANUAL DOWNLOAD on the Files tab of its Nexus page. Keep the zip as it is: Setup installs it (do not run its Install.cmd).",
+      "name_hints": ["nightreignmovement", "nightreign movement", "wylder"],
+      "_name_hints_doc": "From neiroxgod's file name NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip (names and hints are compared as words); the pipeline adds the Nexus mod id 11174 as a hint of its own.",
+      "mode": "P", "must_verify": true,
+      "verify_members": ["install-files.json"],
+      "_verify_members_doc": "Checked, never installed: neiroxgod's own package manifest (version 0.2, edition CONVERGENCE, 148 files). Only his own zip has it, so a package that merely carries copies of his files is refused (the McKenyu rule).",
+      "package_version": "0.2",
+      "_package_version_doc": "The RC's NRM layer must report this package version (and, when its report records it, this zip's sha256): a layer built from another NRM package is refused by the build (pipeline\\rcinputs.py nrm_package_problems) and by --final.",
+      "reference": {"kind": "zip", "path": "${V65}\\sources\\nightreign_movement_02\\NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip", "pin_whole_archive": true,
+                    "expect_sha256": "23facf3f2f0795c6646ea5c6563b678eacd077a243b2988e72be04e697517be9"},
+      "_reference_doc": "A copy of Luka's own download (his Downloads folder, only read): 291,489,273 B, 150 entries, install-files.json version 0.2, edition CONVERGENCE.",
+      "_doc": "must_verify: NRM is neiroxgod's mod; the player's own download is checked once per folder even when every NRM file is in place (as McKenyu and DMN). The files the NRM layer ships unchanged (sha256 equal to a member of this zip) are installed from it; the merged NRM files come from GitHub."
+    }
+  ],
+  "natives": [
+    {
+      "id": "arrows", "component": "arrows",
+      "match": "infinite_arrows.dll",
+      "foreign": "R",
+      "lf": false,
+      "lines": ["[[natives]]", "path = './../mod/dll/infinite_arrows.dll'"]
+    },
+    {
+      "id": "ercap", "component": "ercap",
+      "match": "capacityexpansion.dll",
+      "foreign": "K",
+      "_foreign_doc": "K (repair 2, verifier 3 D1): players install ERCapacityExpansion themselves (any path; its README names none). While the option is off their own [[natives]] entry stays; when it is on (ticked, or forced by the animation wall) theirs is replaced by ours, and uninstall puts theirs back.",
+      "lf": false,
+      "lines": [
+        "# ERCapacityExpansion (MIT, KamiyamaShiki0704): raises the animation limit. Loaded before Seamless Co-op.",
+        "[[natives]]",
+        "path = './../mod/dll/CapacityExpansion.dll'",
+        "load_before = [{ id = \"ersc.dll\", optional = true }]"
+      ],
+      "_doc": "Order T3 of probes\\ERCAP_SEAMLESS.md (DLL before ersc). FIELD-CONFIRMED 2026-10-02 (Luka, ERCAP_TEST_CARD launch 3 + Part B + a real 2-PC Seamless session): load_before ersc works. Should another order ever be needed, it is this one line (load_before -> load_after), then the one-command rebuild."
+    },
+    {
+      "id": "nrm", "component": "nrm",
+      "match": "nightreignmovement",
+      "foreign": "S",
+      "lf": true,
+      "lines_from": "nrm_layer:_me3\\natives_block_nrm.toml",
+      "_doc": "Always the LAST native (array order = append order)."
+    }
+  ],
+
+  "fields": [
+    {
+      "id": "cooppassword", "component": "seamless", "switch": "COOPPASSWORD",
+      "label": "Seamless Co-op session password (optional; your partner needs the same one):",
+      "dest": "SeamlessCoop\\ersc_settings.ini", "section": "PASSWORD", "key": "cooppassword",
+      "secret": true
+    }
+  ],
+
+  "rules": [
+    {"kind": "D", "a": "dmn", "a_states": ["1"], "b": "nrm", "b_states": ["1"], "text": "needed so DMN and Nightreign's Wylder fit together"},
+    {"kind": "W", "a": "dmn", "a_states": ["1"], "b": "nrm", "b_states": ["1"], "text": "With Nightreign Movement's Wylder skill set picked, DMN's R1+R2+Y moveset toggle shares buttons with Onslaught Stake: switch Wylder off at a Site of Grace to use the toggle."}
+  ],
+  "_rules_doc": "Kinds: Q (a requires b), X (conflict), W (warning on the Ready page, logged, in the marker), D (2026-10-03: a and b TOGETHER need the DLL component wall.dll_component; the installer switches it on by itself - the Options page shows it ticked and greyed with this text as its one-line reason, 'ERCapacityExpansion - <text>' - logs CXCXM RULE D, writes AUTO_ON=<dll id> into the marker so a later run that drops a or b removes it again unless the player ticked it himself; a silent explicit /ERCAP=0 is refused). Luka 2026-10-03: DMN + NRM ships NRM 0.2 WITH Wylder (dmn_nrmw_<rc>, 187 entries past the old animation wall, field-proven with the DLL) - the D rule replaces the rc8 switch prep's W rule 'installed without Wylder's skills'. The pipeline requires the D rules to cover exactly the combinations whose measured animation total is over the no-DLL limit (pipeline\\wall.py check_forced). The W rule: the field test's INFERRED-then-confirmed clash (repair 1 of the Wylder lane: NRM's Onslaught combo reads Y held + R2 held and hides ACTION_ARM_R2 / ACTION_ARM_ACTION from c0000.hks while it is held). Final pass 2026-10-03: the warning 'Seamless Co-op together with ERCapacityExpansion is untested' was dropped - field-confirmed 2026-10-02 (single PC, hosting, and a real 2-PC Seamless session, with DMN + NRM + Lucy).",
+
+  "credits_always": [
+    "The Convergence by AronTheBaron and The Convergence Team - convergencemod.com",
+    "The original Convergence X Clever's Moveset merge by windshadowruins; the balancing and +15 upgrade paths that carried this merge up to v6.2 by Kinder",
+    "me3 mod loader by the me3 authors (shipped with The Convergence)",
+    "Scripts-Data-Exposer-FS by ElaDiDu (shipped with The Convergence)",
+    "Unpacking of .rar and .zip downloads: 7-Zip's 7z.dll by Igor Pavlov (GNU LGPL, unRAR licence restriction; 7-zip.org), built into the installer by Inno Setup"
+  ],
+
+  "legacy": {
+    "_doc": "Older releases: used ONLY to preselect options and to remove obsolete files. Read-only inputs.",
+    "_catalogs_doc": "Repair 4: the catalog.json of every EARLIER release of this installer (e.g. \"${INST}\\dist\\v6.5.0\\catalog.json\" for v6.6). Each content it gives a path counts as that path's own older content (H rules: never taken for another mod's file), its paths the new release no longer writes become obsolete files, its changelog an old changelog, its regulations InfDur states. release.py --final refuses a build when an earlier dist\\<tag>\\catalog.json is not listed here. Empty for v6.5 (the first release of this installer).",
+    "catalogs": [],
+    "_packages_doc": "NRM-era fix 2026-10-03 (rc8 one-command run: P4 p4_v64 uninstall left v6.4's mod\\action\\script\\nrm-extension.hks behind, P10 r3 DT): other authors' packages an older release was built from or a player put in by hand. Every file under a 'map' prefix (zip member prefix -> folder under mod\\) and every sha256 the package's own manifest lists for a mapped path (its own files + 'originalSHA256' = every earlier version it replaces) is an older content of that path: H rules of the paths its 'component' writes only while it is on (the installer's '-1' removal and the uninstall then take them for that option's own files, never for another mod's). A package's contents may only meet its own component's paths (the build stops otherwise); they are never obsolete rows. 'sha256' pins the zip. beta.16 = the package v6.4's NRM option and the v6.5 rc1-rc7 test builds were made from (their merged nrm-extension.hks 8e7b453a... comes from the v6.4 zips above); 0.2 = the players' download now (its manifest names beta.16's files and every earlier NRM version's). Measured 2026-10-03: the rc1-rc7 NRM layers, dmn_nrm_rc3-rc7 and the rc7 installer catalogs hold no other content at an NRM-only path.",
+    "packages": [
+      {
+        "label": "Nightreign Movement 1.0.0-beta.16",
+        "component": "nrm",
+        "zip": "${CCM}\\v60\\sources\\nightreign_movement_b16\\NightreignMovement-1.0.0-beta.16-Convergence-3.0.2.zip",
+        "sha256": "e63f2a1c3f0a3517aba91089388d3ed988fb76794ece0ecb67be25e2f04a4fcc",
+        "map": {
+          "NightreignMovement-Convergence-3.0.2-ME3/mod/": "mod\\",
+          "NightreignMovement-Convergence-3.0.2-ME3/licenses/": "mod\\dll\\licenses\\NightreignMovement\\"
+        },
+        "manifest": "NightreignMovement-Convergence-3.0.2-ME3/install-files.json"
+      },
+      {
+        "label": "Nightreign Movement 0.2 Wylder",
+        "component": "nrm",
+        "zip": "${V65}\\sources\\nightreign_movement_02\\NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip",
+        "sha256": "23facf3f2f0795c6646ea5c6563b678eacd077a243b2988e72be04e697517be9",
+        "map": {
+          "NightreignMovement-0.2-Wylder-Convergence-3.0.2/mod/": "mod\\",
+          "NightreignMovement-0.2-Wylder-Convergence-3.0.2/licenses/": "mod\\dll\\licenses\\NightreignMovement\\"
+        },
+        "manifest": "NightreignMovement-0.2-Wylder-Convergence-3.0.2/install-files.json"
+      }
+    ],
+    "v64": {
+      "zips": {
+        "plain": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 - Manual Install.zip",
+        "nrm": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 X Nightreign Movement.zip",
+        "lucy": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 X Lucy.zip",
+        "lucy_nrm": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 X Lucy X Nightreign Movement.zip"
+      },
+      "infdur_plain_zips": {
+        "v1": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 - Infinite Durations Regulation - Canalpa.zip",
+        "v2": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 - Infinite Durations Regulation - Weapon Buffs Only.zip",
+        "v3": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 - Infinite Durations Regulation - All Buffs and AoW.zip",
+        "v4": "${CCM}\\v64\\dist\\Convergence X Clever X McKenyu V6.4 - Infinite Durations Regulation - Everything.zip"
+      },
+      "infdur_lucy_dist": "${WS}\\clever_x_convergence_x_mckenyu_INF_DURATIONS\\v64\\_runs\\v64_final_lucy_rc4\\dist",
+      "changelog_names": ["CXCXM_CHANGELOG_v6.4.txt"]
+    },
+    "v63": {
+      "zips": {"plain": "${CCM}\\v63\\dist\\Convergence X Clever X Mckenyu v6.3.zip"},
+      "infdur_plain_zips": {
+        "v1": "${CCM}\\v63\\dist\\Convergence X Clever X Mckenyu V6.3 - Infinite Durations ADD-ON (REQUIRES V6.3) - V1 Canalpa Edition MAIN.zip",
+        "v2": "${CCM}\\v63\\dist\\Convergence X Clever X Mckenyu V6.3 - Infinite Durations ADD-ON (REQUIRES V6.3) - V2 Weapon Buffs Only.zip",
+        "v3": "${CCM}\\v63\\dist\\Convergence X Clever X Mckenyu V6.3 - Infinite Durations ADD-ON (REQUIRES V6.3) - V3 All Buffs and AoW.zip",
+        "v4": "${CCM}\\v63\\dist\\Convergence X Clever X Mckenyu V6.3 - Infinite Durations ADD-ON (REQUIRES V6.3) - V4 Everything.zip"
+      },
+      "changelog_names": ["CXCXM_CHANGELOG_v6.3.txt"]
+    }
+  }
+}

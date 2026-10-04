@@ -1,0 +1,635 @@
+[
+ {
+  "id": 8000422,
+  "dur": 120.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "fireAttackRate": "1.25"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "300000000",
+  "category": "aow_buff"
+ },
+ {
+  "id": 800000501,
+  "dur": 60.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "staminaAttackRate": "4"
+  },
+  "replace": null,
+  "cycle": "800000504",
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "8000502",
+  "category": "aow_buff"
+ },
+ {
+  "id": 800000503,
+  "dur": 60.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "staminaAttackRate": "4"
+  },
+  "replace": null,
+  "cycle": "800000513",
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "8000502",
+  "category": "aow_buff"
+ },
+ {
+  "id": 800000506,
+  "dur": 60.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.08",
+   "magicAttackRate": "1.08",
+   "fireAttackRate": "1.08",
+   "thunderAttackRate": "1.08",
+   "darkAttackRate": "1.08"
+  },
+  "replace": null,
+  "cycle": "800000509",
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "8000502",
+  "category": "aow_buff"
+ },
+ {
+  "id": 800000508,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.08",
+   "magicAttackRate": "1.08",
+   "fireAttackRate": "1.08",
+   "thunderAttackRate": "1.08",
+   "darkAttackRate": "1.08"
+  },
+  "replace": null,
+  "cycle": "800000514",
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "8000502",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000303,
+  "dur": 40.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "8600",
+  "category": "aow_buff"
+ },
+ {
+  "id": 2610,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.1",
+   "magicAttackRate": "1.1",
+   "fireAttackRate": "1.1",
+   "thunderAttackRate": "1.1",
+   "staminaAttackRate": "1.1",
+   "darkAttackRate": "1.1",
+   "slashAttackRate": "1.1",
+   "blowAttackRate": "1.1",
+   "thrustAttackRate": "1.1",
+   "neutralAttackRate": "1.1"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "0",
+  "spCategory": "20",
+  "vfxId": "2610",
+  "category": "aow_buff"
+ },
+ {
+  "id": 2611,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.2",
+   "magicAttackRate": "1.2",
+   "fireAttackRate": "1.2",
+   "thunderAttackRate": "1.2",
+   "staminaAttackRate": "1.2",
+   "darkAttackRate": "1.2",
+   "slashAttackRate": "1.2",
+   "blowAttackRate": "1.2",
+   "thrustAttackRate": "1.2",
+   "neutralAttackRate": "1.2"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "0",
+  "spCategory": "20",
+  "vfxId": "2611",
+  "category": "aow_buff"
+ },
+ {
+  "id": 2612,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.3",
+   "magicAttackRate": "1.3",
+   "fireAttackRate": "1.3",
+   "thunderAttackRate": "1.3",
+   "staminaAttackRate": "1.3",
+   "darkAttackRate": "1.3",
+   "slashAttackRate": "1.3",
+   "blowAttackRate": "1.3",
+   "thrustAttackRate": "1.3",
+   "neutralAttackRate": "1.3"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "0",
+  "spCategory": "20",
+  "vfxId": "2612",
+  "category": "aow_buff"
+ },
+ {
+  "id": 2613,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.4",
+   "magicAttackRate": "1.4",
+   "fireAttackRate": "1.4",
+   "thunderAttackRate": "1.4",
+   "staminaAttackRate": "1.4",
+   "darkAttackRate": "1.4",
+   "slashAttackRate": "1.4",
+   "blowAttackRate": "1.4",
+   "thrustAttackRate": "1.4",
+   "neutralAttackRate": "1.4"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "0",
+  "spCategory": "20",
+  "vfxId": "2613",
+  "category": "aow_buff"
+ },
+ {
+  "id": 2614,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.5",
+   "magicAttackRate": "1.5",
+   "fireAttackRate": "1.5",
+   "thunderAttackRate": "1.5",
+   "staminaAttackRate": "1.5",
+   "darkAttackRate": "1.5",
+   "slashAttackRate": "1.5",
+   "blowAttackRate": "1.5",
+   "thrustAttackRate": "1.5",
+   "neutralAttackRate": "1.5"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "0",
+  "spCategory": "20",
+  "vfxId": "2614",
+  "category": "aow_buff"
+ },
+ {
+  "id": 430002,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.13",
+   "magicAttackRate": "1.13",
+   "fireAttackRate": "1.13",
+   "thunderAttackRate": "1.13",
+   "darkAttackRate": "1.13"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "430002",
+  "category": "aow_buff"
+ },
+ {
+  "id": 430012,
+  "dur": 30.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackRate": "1.13",
+   "magicAttackRate": "1.13",
+   "fireAttackRate": "1.13",
+   "thunderAttackRate": "1.13",
+   "darkAttackRate": "1.13"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "430012",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000311,
+  "dur": 20.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "8000001",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000313,
+  "dur": 20.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "8000001",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000306,
+  "dur": 6.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "8600",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000308,
+  "dur": 6.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "8600",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000316,
+  "dur": 6.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "8660",
+  "category": "aow_buff"
+ },
+ {
+  "id": 8000318,
+  "dur": 6.0,
+  "name": "",
+  "enchant": {},
+  "rates": {
+   "physicsAttackPowerRate": "1.075"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "8660",
+  "category": "aow_buff"
+ },
+ {
+  "id": 500000801,
+  "dur": 180.0,
+  "name": "",
+  "enchant": {
+   "thunderAttackPower": "65"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "500000900",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 500000925,
+  "dur": 80.0,
+  "name": "",
+  "enchant": {
+   "magicAttackPower": "85"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "500000905",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 800000710,
+  "dur": 70.0,
+  "name": "",
+  "enchant": {
+   "thunderAttackPower": "40"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "1697000",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 800000711,
+  "dur": 70.0,
+  "name": "",
+  "enchant": {
+   "thunderAttackPower": "40"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "1697000",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 2171,
+  "dur": 60.0,
+  "name": "",
+  "enchant": {
+   "thunderAttackPower": "110"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "10000000",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 500000917,
+  "dur": 60.0,
+  "name": "",
+  "enchant": {
+   "fireAttackPower": "60"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "-1",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 900000900,
+  "dur": 60.0,
+  "name": "",
+  "enchant": {
+   "fireAttackPower": "40"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "900000900",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 2201,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {
+   "fireAttackPower": "110"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "10000010",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 2211,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {
+   "darkAttackPower": "110"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "10000011",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 7000101,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {
+   "magicAttackPower": "60"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "700000900",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 7000103,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {
+   "magicAttackPower": "60"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "700000901",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 8000301,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {
+   "fireAttackPower": "30"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "1626000",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 8000705,
+  "dur": 45.0,
+  "name": "",
+  "enchant": {
+   "thunderAttackPower": "65"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "800000700",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 2241,
+  "dur": 30.0,
+  "name": "[Smoke] - Smoke Buff",
+  "enchant": {
+   "thunderAttackPower": "50"
+  },
+  "rates": {
+   "thunderAttackRate": "1.2"
+  },
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "2244",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 6973,
+  "dur": 20.0,
+  "name": "",
+  "enchant": {
+   "darkAttackPower": "35"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "800000",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 6975,
+  "dur": 20.0,
+  "name": "",
+  "enchant": {
+   "darkAttackPower": "35"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "163",
+  "vfxId": "800000",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 800000201,
+  "dur": 20.0,
+  "name": "",
+  "enchant": {
+   "fireAttackPower": "85"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "800000200",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 2221,
+  "dur": 10.0,
+  "name": "",
+  "enchant": {
+   "darkAttackPower": "110"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "20000001",
+  "category": "aow_weapon_buff"
+ },
+ {
+  "id": 800000602,
+  "dur": 7.0,
+  "name": "",
+  "enchant": {
+   "fireAttackPower": "35"
+  },
+  "rates": {},
+  "replace": null,
+  "cycle": null,
+  "tgt_enemy": "1",
+  "spCategory": "162",
+  "vfxId": "1626000",
+  "category": "aow_weapon_buff"
+ }
+]

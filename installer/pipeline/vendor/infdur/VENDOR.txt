@@ -1,0 +1,3 @@
+build65.py <- C:\00000ConvergenceER\ClaudeWorkspace\clever_x_convergence_x_mckenyu_INF_DURATIONS\v64\work\build64.py (md5 a495950ddfb398a38c4f28fffcfed4b7)
+merge_final.json <- C:\00000ConvergenceER\ClaudeWorkspace\clever_x_convergence_x_mckenyu_INF_DURATIONS\v64\work\merge_final.json (md5 3d750eb8974fc560d066589ff14b49bb) + SpEffect 800000711 (copy of 800000710's entry)
+Re-create with: py -3.11 -X utf8 make_vendor.py

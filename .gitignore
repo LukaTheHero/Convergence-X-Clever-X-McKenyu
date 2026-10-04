@@ -1,0 +1,21 @@
+# This repository's git tree holds text only (installer source, catalog, docs).
+# Game-format files and archives go to the GitHub release as assets, never into git.
+*.dcx
+*.bin
+*.dll
+*.exe
+*.hks
+*.bnd
+*.tpf
+*.bdt
+*.bhd
+*.wem
+*.bnk
+*.bk2
+*.zip
+*.rar
+*.7z
+*.me3
+__pycache__/
+*.pyc
+*.log
