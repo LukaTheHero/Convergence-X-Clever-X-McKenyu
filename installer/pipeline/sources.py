@@ -70,6 +70,16 @@ def _zip_files(zp: Path) -> list[dict]:
     return out
 
 
+def layer_package_files(a: dict) -> list[dict]:
+    """2026-10-04: the files of an archive's layer_package zip (the package its layer was built from, when the players'
+    download is another zip with the same files: NRM 0.2 vs the Nexus 1.2 zip), after its sha256 pin"""
+    lp = a["layer_package"]
+    p = Path(lp["path"])
+    require(p.is_file() and sha256_file(p) == lp["expect_sha256"].lower(),
+            "%s: layer_package %s is not the pinned file (sha256 %s)" % (a["id"], p, lp["expect_sha256"][:16]))
+    return _zip_files(p)
+
+
 SEVENZIP = Path(r"C:\Program Files\7-Zip\7z.exe")
 TAR = Path(r"C:\Windows\System32\tar.exe")
 

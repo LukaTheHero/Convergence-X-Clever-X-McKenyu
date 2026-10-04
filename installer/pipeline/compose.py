@@ -387,6 +387,22 @@ class Composer:
                 continue
             for f in ref.files:
                 forbidden.setdefault(f["sha256"], "%s:%s" % (aid, f["tail"]))
+        # 2026-10-04: an archive's layer_package (the package its layer was built from, e.g. NRM's 0.2 zip next to the
+        # Nexus 1.2 download) counts as the players' own too, except its declared 'hosted' tails (licence notices the
+        # players' download lacks; they must ship with the DLL)
+        n_hosted = 0
+        for a in self.src["archives"]:
+            lp = a.get("layer_package") if a.get("enabled", True) else None
+            if not lp:
+                continue
+            from . import sources
+            hosted = [t.lower() for t in lp.get("hosted", [])]
+            for f in sources.layer_package_files(a):
+                t = f["tail"].lower()
+                if any(t == h or t.endswith("\\" + h) for h in hosted):
+                    n_hosted += 1
+                    continue
+                forbidden.setdefault(f["sha256"], "%s (layer package):%s" % (a["id"], f["tail"]))
         clever_names = set()
         for c in self.comps:
             if c.get("product") == "clever_parts":
@@ -407,9 +423,9 @@ class Composer:
                 bad.append("main zip member with a Clever part name: %s" % m["tail"])
         require(not bad, "NEVER-HOST RULE BROKEN: %s" % bad[:10])
         log("never-host: no blob and no main-zip member has the bytes of any of %d files of the players' own downloads "
-            "(%s); no Clever part name hosted (%d names)" % (
-                len(forbidden), ", ".join(sorted(a for a in self.refs if a != "main_v65")), len(clever_names)))
-        return {"forbidden_contents": len(forbidden), "clever_names": len(clever_names)}
+            "(%s; layer packages: %d declared hosted notices exempt); no Clever part name hosted (%d names)" % (
+                len(forbidden), ", ".join(sorted(a for a in self.refs if a != "main_v65")), n_hosted, len(clever_names)))
+        return {"forbidden_contents": len(forbidden), "clever_names": len(clever_names), "layer_package_hosted": n_hosted}
 
 
 def _prod(ns):

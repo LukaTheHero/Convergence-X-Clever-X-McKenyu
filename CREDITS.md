@@ -15,7 +15,7 @@ The installer shows the credits of every option you pick. All of them:
 - Lucy's armor: Chevaleresse II by yurica, from the Skyrim SE ports by THBG0 (SMP SE) and by yurica, THBossGamer, Jeir and docteure (CBBE BodySlide)  _(Lucy - playable Lucy character + Chevaleresse armor)_
 - Lucy's hair: KS Hairdos by Kalilies and Stealthic, via the HDT SMP version by ousnius  _(Lucy - playable Lucy character + Chevaleresse armor)_
 - Lucy's body mesh: based on CBBE by Caliente and ousnius  _(Lucy - playable Lucy character + Chevaleresse armor)_
-- Nightreign Movement by neiroxgod - nexusmods.com/eldenring/mods/11174  _(Nightreign Movement 0.2 - sprint, wall jumps, ledge climbing and Wylder's skills)_
+- Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) by neiroxgod - nexusmods.com/eldenring/mods/11174  _(Nightreign Movement 1.2 - sprint, wall jumps, ledge climbing and Wylder's skills)_
 - Infinite Durations by Canalpa (Luka)  _(Infinite Durations)_
 - Infinite Arrows and Bolts v1.2 (Canalpa rebuild for Patch 1.17) - nexusmods.com/eldenring/mods/10389  _(Infinite Arrows and Bolts - arrows and bolts are never used up)_
 - Infinite Arrows and Bolts is built on fromsoftware-rs by vswarte (MIT or Apache-2.0); the idea comes from the original Infinite arrows and bolts by its author (nexusmods.com/eldenring/mods/9032)  _(Infinite Arrows and Bolts - arrows and bolts are never used up)_

@@ -271,8 +271,57 @@ def nrm_package_problems(src: dict, rc_name: str) -> list[str]:
                    "build the RC's NRM layer from that package" % (lay.name, got["version"] or "(unknown)", want_v,
                                                                    a["id"]))
     elif got["zip_sha256"] and want_sha and got["zip_sha256"] != want_sha:
-        out.append("the NRM layer %s was built from a Nightreign Movement %s zip with sha256 %s, archive %s pins %s" % (
-            lay.name, got["version"], got["zip_sha256"][:16], a["id"], want_sha[:16]))
+        # 2026-10-04: the players download the Nexus 1.2 zip (the reference); the layer was built from neiroxgod's 0.2
+        # package (layer_package), whose files the Nexus zip holds byte for byte. Accepted only for that pinned package,
+        # and only when every file of it the layer ships unchanged is in the reference or a declared hosted notice.
+        lp = a.get("layer_package") or {}
+        if not lp or got["zip_sha256"] != lp.get("expect_sha256", "").lower():
+            out.append("the NRM layer %s was built from a Nightreign Movement %s zip with sha256 %s, archive %s pins %s%s" % (
+                lay.name, got["version"], got["zip_sha256"][:16], a["id"], want_sha[:16],
+                " (layer_package %s)" % lp["expect_sha256"][:16] if lp else ""))
+        else:
+            out += layer_package_problems(a, lay)
+    return out
+
+
+def layer_package_problems(a: dict, lay: Path) -> list[str]:
+    """2026-10-04: every file of the archive's layer_package that the layer ships unchanged (same sha256) must be in
+    the archive's reference (the players' download) by name + sha256, or be one of layer_package.hosted. [] = fine."""
+    from . import sources                       # late: sources imports nothing of this module
+    from .util import hash_file
+    lp = a["layer_package"]
+    try:
+        pkg = sources.layer_package_files(a)
+    except BuildError as e:
+        return [str(e)]
+    ref = sources.Ref(a)
+    ref.files = sources._zip_files(ref.path) if ref.path and ref.path.is_file() else []
+    if not ref.files:
+        return ["archive %s: reference zip missing: %s" % (a["id"], ref.path)]
+    have = {(f["name"].lower(), f["sha256"]) for f in ref.files}
+    # the files the layer SHIPS (its report's shipping_files, as RC.nrm_files; its '_' folders - e.g. _nrm\pkg, the
+    # unpacked package it was built from - are never installed)
+    try:
+        ship = [r.replace("/", "\\") for r in read_json(lay / "NRM_LAYER_REPORT.json").get("shipping_files", [])]
+    except (OSError, ValueError):
+        ship = []
+    ship = ship or files_under(lay, skip_underscore=True, skip_json=True)
+    lay_shas = {hash_file(lay / rel)["sha256"] for rel in ship}
+    hosted = [t.lower() for t in lp.get("hosted", [])]
+    out, n_ok = [], 0
+    for f in pkg:
+        if f["sha256"] not in lay_shas:
+            continue
+        t = f["tail"].lower()
+        if (f["name"].lower(), f["sha256"]) in have:
+            n_ok += 1
+        elif not any(t == h or t.endswith("\\" + h) for h in hosted):
+            out.append("the NRM layer %s ships %s of its package unchanged, but the players' download %s lacks it" % (
+                lay.name, f["tail"], ref.path.name))
+    if not out:
+        log("NRM layer %s: built from the layer package (sha256 %s); its %d files the layer ships unchanged are all in "
+            "the players' download %s, + %d declared hosted notices" % (lay.name, lp["expect_sha256"][:16], n_ok,
+                                                                       ref.path.name, len(hosted)))
     return out
 
 

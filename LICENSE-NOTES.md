@@ -3,7 +3,7 @@
 - **The installer source and the merge's own files** (`installer/`, `releases/`, and the release assets made
   by Canalpa): (c) Canalpa (Luka). No open-source licence is granted for them; ask before reusing them outside
   this merge.
-- **Merged files in the release assets** contain reworked parts of other authors' work (Clever's Moveset Modpack by clevererraptor6, McKenyu's Modpack by McKenyu, Nightreign Movement by neiroxgod, Deflect Me Not by Rei Jr., and The
+- **Merged files in the release assets** contain reworked parts of other authors' work (Clever's Moveset Modpack by clevererraptor6, McKenyu's Modpack by McKenyu, Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) by neiroxgod, Deflect Me Not by Rei Jr., and The
   Convergence). They are made for this merge, credited in [CREDITS.md](CREDITS.md), and only work together
   with each author's original download from the author's own page. The rights to that content stay with its
   authors.

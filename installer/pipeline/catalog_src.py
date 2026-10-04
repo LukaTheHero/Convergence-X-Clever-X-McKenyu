@@ -193,6 +193,19 @@ def validate(s: dict) -> None:
         require(isinstance(a.get("nexus_url", ""), str) and (a.get("nexus_url", "") == "" or HTTPS_RE.match(a["nexus_url"])),
                 "archive %s: nexus_url %r: empty or an https:// address" % (a["id"], a.get("nexus_url")))
         require(isinstance(a.get("package_version", ""), str), "archive %s: package_version must be a string" % a["id"])
+        lp = a.get("layer_package")
+        if lp is not None:
+            # 2026-10-04: the package the layer was built from when the players' download is another zip of the same
+            # files (NRM: neiroxgod's 0.2 package vs the Nexus 1.2 zip); see pipeline\rcinputs.py + compose.never_host
+            require(isinstance(lp, dict) and isinstance(lp.get("path"), str) and lp["path"]
+                    and re.fullmatch(r"[0-9a-f]{64}", lp.get("expect_sha256", "")),
+                    "archive %s: layer_package needs path + expect_sha256 (64 lower-case hex)" % a["id"])
+            require(a["mode"] == "P" and ref.get("kind") == "zip", "archive %s: layer_package needs a mode P zip" % a["id"])
+            hosted = lp.get("hosted", [])
+            require(isinstance(hosted, list) and all(isinstance(t, str) and t and "/" not in t and ".." not in t.split("\\")
+                                                     for t in hosted),
+                    "archive %s: layer_package.hosted must be relative tails with backslashes" % a["id"])
+            require(set(lp) <= {"path", "expect_sha256", "hosted"}, "archive %s: layer_package keys %s" % (a["id"], sorted(lp)))
 
     # a second download site for files of another author's package (canalpa.com for Nightreign Movement beta.16) was
     # retired on 2026-10-03: every other author's mod is the player's own download, every hosted file is a release asset

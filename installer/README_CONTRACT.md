@@ -179,7 +179,8 @@ Archives (the player's downloads), index `a`; members index `m`; pins index `i`:
 | `MemTail` | TArrayOfString | reference path inside the pack (display, tie-break only) |
 | `MemSha` / `MemSize` | TArrayOfString / array of Int64 | pinned content; mode V: `MemSha` = the TESTED version's sha256 (repair 1; never a requirement, only the "tested version" verdict), `MemSize` `-1` |
 
-A mode P archive may list verify-only members (`archives[].verify_members` in catalog.src.json): members no variant
+A mode P archive may list verify-only members (`archives[].verify_members` in catalog.src.json; since 2026-10-04 only
+McKenyu's, the NRM Nexus zip has no manifest): members no variant
 uses, which must be present (by name + sha256) for the archive to be accepted - files only the author's own pack has
 (mck_1313: `Start_McKenyu_Modpack.bat`), so a package that merely carries copies of his files is refused.
 
@@ -494,6 +495,17 @@ hot components; hosted distinct blobs ~81 / ~512 MB (Lucy ~375 MB, NRM merged ~9
 InfDur ~24 MB). Wall: MAIN 31,452, MAIN+NRM 31,519 (under 32,768: ERCap is never forced by v6.5's own options).
 
 ## 12. Contract change log
+- NRM Nexus 1.2 (2026-10-04; no Inno code change, no new array, CAT_FORMAT 2 unchanged): Luka's Nexus 11174 download is
+  "NightreignMovement 1.2 Wylder Convergence 3.0.2 11174 1.2.0 2026-09-29T18-23Z M1VyvG96u.zip" (flat mod\, no
+  install-files.json, no licence files; its 148 files = the 0.2 package's mod\ files byte for byte). Archive `nrm_02`
+  (id kept) now pins that zip (whole-zip pin + its 57 used members); `verify_members` dropped for it. New optional
+  catalog.src.json key `archives[].layer_package` {path, expect_sha256, hosted[]}: the package the layer was built from
+  when the players' download is another zip of the same files. `rcinputs.nrm_package_problems` accepts a layer built
+  from it only when every file of it the layer ships is in the reference (name + sha256) or a `hosted` tail;
+  `compose.never_host` forbids every other file of it in the main zip and the blobs. The 3 NRM licence notices
+  (mem-MIT, MinHook-BSD2, NOTICE) are blobs now (110 blobs). Tests: tests\nrm_nexus_regress.py; fixtures use the real
+  Nexus zip (the 0.2 zip moved to sb\_fixtures\alt). Proof: work\_nrmnexus_backup\prove_nrm_paths.py (READY catalog
+  ada9b029 rebuilt in memory; all 301 paths same content; only the 3 notices change source A -> B).
 - DMN + Wylder, ERCapacityExpansion added automatically (2026-10-03 evening, Luka's decision after his field test of
   RC8 + NRM 0.2 WITH Wylder + DMN + ERCap: "everything positive"; CAT_FORMAT 2 unchanged, no new array - a new
   `RuleKind` value and a new marker / manifest line, both additive):

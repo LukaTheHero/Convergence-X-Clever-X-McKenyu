@@ -154,8 +154,8 @@
   {
    "id": "nrm",
    "switch": "NRM",
-   "title": "Nightreign Movement 0.2 - sprint, wall jumps, ledge climbing and Wylder's skills",
-   "desc": "Needs your own Nightreign Movement 0.2 download (Convergence edition) from neiroxgod's Nexus page; merged files from GitHub. With DMN, ERCapacityExpansion is added too.",
+   "title": "Nightreign Movement 1.2 - sprint, wall jumps, ledge climbing and Wylder's skills",
+   "desc": "Needs your own Nightreign Movement 1.2 download (Wylder, Convergence 3.0.2 edition) from neiroxgod's Nexus page; merged files from GitHub. With DMN, ERCapacityExpansion is added too.",
    "kind": "T",
    "experimental": false,
    "default": 0,
@@ -172,7 +172,7 @@
      "wall": 1107
     }
    ],
-   "credit": "Nightreign Movement by neiroxgod - nexusmods.com/eldenring/mods/11174",
+   "credit": "Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) by neiroxgod - nexusmods.com/eldenring/mods/11174",
    "source_text": "your download (Nexus)",
    "source": "nexus",
    "hot": true,
@@ -4919,7 +4919,7 @@
    "sha256": "e25d31eabf52e7b12c84fca01f99703349553a4ecec0fad2fd4d548bb5dfff0b",
    "size": 96368,
    "src": "A",
-   "ref": 172
+   "ref": 168
   },
   {
    "path": 1,
@@ -4975,7 +4975,7 @@
    "sha256": "a552a3e159d9bd82559de29840be45c7a1ec174ebd9e6b34bcde2122f7017acc",
    "size": 452185,
    "src": "A",
-   "ref": 173
+   "ref": 169
   },
   {
    "path": 4,
@@ -5024,7 +5024,7 @@
    "sha256": "b280d4c0dc3398771b2cd8c7008d46b68db6579fd8fe3178d76e1aaf20e71be3",
    "size": 70256,
    "src": "A",
-   "ref": 174
+   "ref": 170
   },
   {
    "path": 9,
@@ -5052,7 +5052,7 @@
    "sha256": "41f10108a642aab343e3464f9db524b457b4da09585b1d7760590e6dc7f2c28a",
    "size": 19072,
    "src": "A",
-   "ref": 175
+   "ref": 171
   },
   {
    "path": 11,
@@ -5192,315 +5192,315 @@
    "sha256": "6a3a07296f1227b6db8d06465a9f08b270155118da6390b8302f896e45a12d34",
    "size": 143310,
    "src": "A",
-   "ref": 176
+   "ref": 172
   },
   {
    "path": 20,
    "sha256": "9b08276e2317ef5dea56c821b02984de6466cdb1c26e7c5625d5d0985240b247",
    "size": 37232,
    "src": "A",
-   "ref": 177
+   "ref": 173
   },
   {
    "path": 21,
    "sha256": "24dbdd8c9923c515b34d4b6bef5e8d0321b4e3412c1af02ecdfc05b45bae627d",
    "size": 104176,
    "src": "A",
-   "ref": 178
+   "ref": 174
   },
   {
    "path": 22,
    "sha256": "604f6161178ade60e126f3350c0b72ea1d32449fdf831859c9635c481e3f14ae",
    "size": 296094,
    "src": "A",
-   "ref": 179
+   "ref": 175
   },
   {
    "path": 23,
    "sha256": "77923edf978021e8b6f386f5a3fbea0f9e99076105f1fbc29848fd5bef9a41d6",
    "size": 451266,
    "src": "A",
-   "ref": 180
+   "ref": 176
   },
   {
    "path": 24,
    "sha256": "033ee545e8160ca5476079154584cd53e3f10f5eaa8c397fcbb8ca96297336e8",
    "size": 113004,
    "src": "A",
-   "ref": 181
+   "ref": 177
   },
   {
    "path": 25,
    "sha256": "09f3752ed7c1b2c534e507a3a79bf6462f72afba5b6030010a15a06f948eb0b5",
    "size": 87348,
    "src": "A",
-   "ref": 182
+   "ref": 178
   },
   {
    "path": 26,
    "sha256": "aea4ce8ffa76135995208acb348d70949fad946ada22baad5c0077ac4177628a",
    "size": 51538,
    "src": "A",
-   "ref": 183
+   "ref": 179
   },
   {
    "path": 27,
    "sha256": "baa01da588dc58dac8abc84b29db274747c3c791df9ec02598249f37af43e078",
    "size": 127852,
    "src": "A",
-   "ref": 184
+   "ref": 180
   },
   {
    "path": 28,
    "sha256": "946385ff2e50e7332eddbdfb88d6418f154f9d57af79fffba39ecbc4c94760cb",
    "size": 127852,
    "src": "A",
-   "ref": 185
+   "ref": 181
   },
   {
    "path": 29,
    "sha256": "c640c09bff789f3992b36822a138c0fbbb4cb6712e5095ad3802f0422a105fc7",
    "size": 172878,
    "src": "A",
-   "ref": 186
+   "ref": 182
   },
   {
    "path": 30,
    "sha256": "fe08ddc46806d48943b28c092a41992d884ceec41a83924583aba22b0f2355c6",
    "size": 172878,
    "src": "A",
-   "ref": 187
+   "ref": 183
   },
   {
    "path": 31,
    "sha256": "d48d7433adafcfc298aa24b36036bb2531e7f3bfb15df8426dfd309a6cd85dd2",
    "size": 163182,
    "src": "A",
-   "ref": 188
+   "ref": 184
   },
   {
    "path": 32,
    "sha256": "e64dacf7331eeddb5cf841b9e871b4d58a2ccebcce1dec1ac6eb7033cac36057",
    "size": 163182,
    "src": "A",
-   "ref": 189
+   "ref": 185
   },
   {
    "path": 33,
    "sha256": "964c89dbed823129d9eccda20d747e224f44f5bedb973f42283fb0d9b8aeef27",
    "size": 206648,
    "src": "A",
-   "ref": 190
+   "ref": 186
   },
   {
    "path": 34,
    "sha256": "f85211ca4b2d757e3e42430f4ab47d428e887b0d1c7620863ef436827fea8dd5",
    "size": 206648,
    "src": "A",
-   "ref": 191
+   "ref": 187
   },
   {
    "path": 35,
    "sha256": "b99fc892b752f73ce7aad6e517185f02403a0e9dfdb1464ee8ce11272658b88f",
    "size": 267968,
    "src": "A",
-   "ref": 192
+   "ref": 188
   },
   {
    "path": 36,
    "sha256": "227da97db42837b6be657cc500e0b46e74d7f5198f363226f33d16b77029b138",
    "size": 267968,
    "src": "A",
-   "ref": 193
+   "ref": 189
   },
   {
    "path": 37,
    "sha256": "c7f2ae7f60bd55b73bde10de3709acc65e9da52939f63b7dc18243de395ede13",
    "size": 22932,
    "src": "A",
-   "ref": 194
+   "ref": 190
   },
   {
    "path": 38,
    "sha256": "7c705fad2aab5160fff088e7495b0ba58080a4eb975ae29eaa74181e0d56d155",
    "size": 20942,
    "src": "A",
-   "ref": 195
+   "ref": 191
   },
   {
    "path": 39,
    "sha256": "978af93628c5d29921b19ab39380f0f3fb822b27047dd6e297b1c7461676ff08",
    "size": 21268,
    "src": "A",
-   "ref": 196
+   "ref": 192
   },
   {
    "path": 40,
    "sha256": "a2b301863d62a9c60b4cc933813f06761fe9abc0eb70b4517509ef1472e95e5e",
    "size": 22498,
    "src": "A",
-   "ref": 197
+   "ref": 193
   },
   {
    "path": 41,
    "sha256": "f21c462965dc57d82211ad4fbd2835993da51a4275f8ac8f2619a0b5d7e39663",
    "size": 27260,
    "src": "A",
-   "ref": 198
+   "ref": 194
   },
   {
    "path": 42,
    "sha256": "c732d037cb242e34d6378468a0a9ec1113c8df449781c6e08494cae97ab736d2",
    "size": 17718,
    "src": "A",
-   "ref": 199
+   "ref": 195
   },
   {
    "path": 43,
    "sha256": "29b3197af65e06d0b982b9dda2fd61972406e5cb1f9ca18e2e70d89656eaee06",
    "size": 18104,
    "src": "A",
-   "ref": 200
+   "ref": 196
   },
   {
    "path": 44,
    "sha256": "04892d4c4cb48aef02da3578a4cd248b9fe270266e606a3d1a9f1e81f1103c54",
    "size": 17424,
    "src": "A",
-   "ref": 201
+   "ref": 197
   },
   {
    "path": 45,
    "sha256": "e4db8df604ade39c03b42980288d3d229f04141dbd6f705c704065d0278f2c41",
    "size": 21634,
    "src": "A",
-   "ref": 202
+   "ref": 198
   },
   {
    "path": 46,
    "sha256": "e5aafe6a234df27b460f22eab49ec67e3d8a66d305ce80cc2f7a44e0bacef532",
    "size": 20802,
    "src": "A",
-   "ref": 203
+   "ref": 199
   },
   {
    "path": 47,
    "sha256": "6bc744c537cb8ae5e34c7d0932e86dccddff8def44ca7c21528b6143e7f07ebd",
    "size": 87348,
    "src": "A",
-   "ref": 204
+   "ref": 200
   },
   {
    "path": 48,
    "sha256": "c3c23b2624503ae9f0db2666fe8ccbbf417396370ce4f7a2d904beebe5bc0d05",
    "size": 307108,
    "src": "A",
-   "ref": 205
+   "ref": 201
   },
   {
    "path": 49,
    "sha256": "388f7676734b753984518404159c8e0e6d1fa814cf2fbff0288bc41f5f077d8b",
    "size": 69574,
    "src": "A",
-   "ref": 206
+   "ref": 202
   },
   {
    "path": 50,
    "sha256": "53311923817e2272757c1f18c84dab3573649df39a8044377ef8f940e2484cf9",
    "size": 114692,
    "src": "A",
-   "ref": 207
+   "ref": 203
   },
   {
    "path": 51,
    "sha256": "9b08276e2317ef5dea56c821b02984de6466cdb1c26e7c5625d5d0985240b247",
    "size": 37232,
    "src": "A",
-   "ref": 208
+   "ref": 204
   },
   {
    "path": 52,
    "sha256": "4e6fa7158314d5566daee5663bee84c3777338c9b4696eb283d1fcb6325d0414",
    "size": 37232,
    "src": "A",
-   "ref": 209
+   "ref": 205
   },
   {
    "path": 53,
    "sha256": "0920aa0f144c99449b89da9f5270c0cdd2e0d03be4d691bb7f38911a357dac02",
    "size": 61162,
    "src": "A",
-   "ref": 210
+   "ref": 206
   },
   {
    "path": 54,
    "sha256": "cad6f0b4773aec9c57d019fb9ade66ff9c0147655e39fc95ccac003fe9afd2b1",
    "size": 124178,
    "src": "A",
-   "ref": 211
+   "ref": 207
   },
   {
    "path": 55,
    "sha256": "13b947bb0ebb8540eb112830613310c0e2d1061753d9c6ac859eeb95b3a86e5a",
    "size": 484212,
    "src": "A",
-   "ref": 212
+   "ref": 208
   },
   {
    "path": 56,
    "sha256": "7a811b6529f8989af12fbf571a2c1086698ebfaaed5e0171632b977f5e730783",
    "size": 658140,
    "src": "A",
-   "ref": 213
+   "ref": 209
   },
   {
    "path": 57,
    "sha256": "f25dea36f4ad75a0834cf6c2ce58badeb60ea82e8d539f5623127837304b18b1",
    "size": 713048,
    "src": "A",
-   "ref": 214
+   "ref": 210
   },
   {
    "path": 58,
    "sha256": "d34529753c5550a07967a55c2b22b2b8a865a09239e4ac380c29cdfb35ce8df9",
    "size": 31954,
    "src": "A",
-   "ref": 215
+   "ref": 211
   },
   {
    "path": 59,
    "sha256": "531ffbac43a24daff33bddaca03983aab9c3eeb19cc313aa6072bc5ffad77107",
    "size": 43096,
    "src": "A",
-   "ref": 216
+   "ref": 212
   },
   {
    "path": 60,
    "sha256": "b42261109e1c1cb58d4d0c83882493349f3b252a8c80e4b4ff8814f71e7ad8ca",
    "size": 36084,
    "src": "A",
-   "ref": 217
+   "ref": 213
   },
   {
    "path": 61,
    "sha256": "15d6e06f4c4887cef42d4e880ddf306e4c182731b84e3efaee7a43728e048ed9",
    "size": 51057,
    "src": "A",
-   "ref": 218
+   "ref": 214
   },
   {
    "path": 62,
    "sha256": "4cf238fa6bb10b88673f3c359ba53f0c8053b4042f7f8f041736f723d9c3b90b",
    "size": 88894,
    "src": "A",
-   "ref": 219
+   "ref": 215
   },
   {
    "path": 63,
    "sha256": "971c043ed127d36efc0a234d965134c21a77b2b07483c39f578f89778833ca06",
    "size": 381845,
    "src": "A",
-   "ref": 220
+   "ref": 216
   },
   {
    "path": 64,
@@ -5527,36 +5527,36 @@
    "path": 67,
    "sha256": "a624a5464ac2d91d0ec24aab56bda76f957a9be178bbdf0443c4c5374a58a0a5",
    "size": 1061,
-   "src": "A",
-   "ref": 169
+   "src": "B",
+   "ref": 28
   },
   {
    "path": 68,
    "sha256": "4f21f857550d7be854da6ea5f2da4e6775ca4e3fbb535e4f3d961c47d0bf3335",
    "size": 4446,
-   "src": "A",
-   "ref": 170
+   "src": "B",
+   "ref": 29
   },
   {
    "path": 69,
    "sha256": "8071e980ed88529eeb51e40eba1582c027a3540fc5fd35d79dc40feb53da6298",
    "size": 316,
-   "src": "A",
-   "ref": 171
+   "src": "B",
+   "ref": 30
   },
   {
    "path": 70,
    "sha256": "038961ff9ca062fb1e24868eb8517ff5ea91e082b2a467c7f795fa012e527f3c",
    "size": 496640,
    "src": "A",
-   "ref": 221
+   "ref": 217
   },
   {
    "path": 71,
    "sha256": "bc70371f21df98bdd9a78d27fbf86224c498dcd33bfcd391cc4313cbe2ad424a",
    "size": 118,
    "src": "B",
-   "ref": 28
+   "ref": 31
   },
   {
    "path": 72,
@@ -5577,21 +5577,21 @@
    "sha256": "b06d107e8891f86395814f30dd6dadf115dc76582bc75bad8a6356fbc7ff5c6a",
    "size": 45999,
    "src": "B",
-   "ref": 30
+   "ref": 33
   },
   {
    "path": 73,
    "sha256": "53883287b1c671b7ef8f927ab41d70771bbf0075e307b7537b52e0f9713e20db",
    "size": 45940,
    "src": "B",
-   "ref": 29
+   "ref": 32
   },
   {
    "path": 73,
    "sha256": "f0ef07201ea99ff47781112f932ddf363267b9369159ebebd487192986b23951",
    "size": 46014,
    "src": "B",
-   "ref": 31
+   "ref": 34
   },
   {
    "path": 74,
@@ -5605,35 +5605,35 @@
    "sha256": "940bfca221a6f76237cc9120b4943e00ae45ad43d77f0ba237815d2e02e6d22b",
    "size": 121832658,
    "src": "B",
-   "ref": 34
+   "ref": 37
   },
   {
    "path": 74,
    "sha256": "34aaca18934ed6515977371521862e5892f8524d18ce3ad5d49a3b99c93a54e8",
    "size": 121974114,
    "src": "B",
-   "ref": 33
+   "ref": 36
   },
   {
    "path": 74,
    "sha256": "07459c866044b340533fbf48db017b34b16d9ef7fe413b1ed584ddef4021af8f",
    "size": 122010168,
    "src": "B",
-   "ref": 32
+   "ref": 35
   },
   {
    "path": 75,
    "sha256": "414b65b11715d68bdc42f5f0f897562d6c0fe404cfd66badc200f538031cd6f1",
    "size": 21440,
    "src": "A",
-   "ref": 222
+   "ref": 218
   },
   {
    "path": 76,
    "sha256": "3c425ef203a51e3f0152a3e6da4d8dfecc304b3f36010ab33e78793cc7cd481b",
    "size": 53375952,
    "src": "A",
-   "ref": 223
+   "ref": 219
   },
   {
    "path": 77,
@@ -5647,7 +5647,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 78,
@@ -5661,21 +5661,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 78,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 78,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 79,
@@ -5689,7 +5689,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 80,
@@ -5703,28 +5703,28 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 80,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 80,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 81,
    "sha256": "2a67dc3dc8875223fec98c0aa489ca07dcef272d6a737300cfc85d74e9e7ba42",
    "size": 241984,
    "src": "A",
-   "ref": 224
+   "ref": 220
   },
   {
    "path": 82,
@@ -5738,21 +5738,21 @@
    "sha256": "5a087a07c8f47c71b1c4b9e1ff32f6bb86de7d40151921485073580fe0cd5523",
    "size": 484240,
    "src": "B",
-   "ref": 39
+   "ref": 42
   },
   {
    "path": 82,
    "sha256": "7e5ebca8297a18b1cad7d87b004d0a288dc1d165fe16852192e31558c7ba4a61",
    "size": 484640,
    "src": "B",
-   "ref": 40
+   "ref": 43
   },
   {
    "path": 82,
    "sha256": "e5cd21ae1f88f6d8e9d605eb23296b92e185dbd28ddc1fa90fa9b03cf2822958",
    "size": 484512,
    "src": "B",
-   "ref": 41
+   "ref": 44
   },
   {
    "path": 83,
@@ -5766,21 +5766,21 @@
    "sha256": "1254bb80c1a1cba7bb393766d2969ea55ebeb5f1a72148161bbac6bd642aac6a",
    "size": 556704,
    "src": "B",
-   "ref": 42
+   "ref": 45
   },
   {
    "path": 83,
    "sha256": "ea6cd8776cf9db8773e82bc8b8ed9398b8e4fdb74651d6439e03c0b63efa99c6",
    "size": 557072,
    "src": "B",
-   "ref": 44
+   "ref": 47
   },
   {
    "path": 83,
    "sha256": "bf22965df3ab725162081703588de01bbb62dcfd15431f141bae4f73bfdfff7f",
    "size": 556672,
    "src": "B",
-   "ref": 43
+   "ref": 46
   },
   {
    "path": 84,
@@ -5794,7 +5794,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 85,
@@ -5808,21 +5808,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 85,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 85,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 86,
@@ -5836,7 +5836,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 87,
@@ -5850,21 +5850,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 87,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 87,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 88,
@@ -5878,7 +5878,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 89,
@@ -5892,21 +5892,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 89,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 89,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 90,
@@ -5920,7 +5920,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 91,
@@ -5934,21 +5934,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 91,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 91,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 92,
@@ -5962,7 +5962,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 93,
@@ -5976,21 +5976,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 93,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 93,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 94,
@@ -6004,7 +6004,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 95,
@@ -6018,28 +6018,28 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 95,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 95,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 96,
    "sha256": "1ce2fadd4ff6e30d42dcd381e7f35ccabbaaa2afd2deb5fe58dc11e10f272240",
    "size": 262256,
    "src": "A",
-   "ref": 225
+   "ref": 221
   },
   {
    "path": 97,
@@ -6053,21 +6053,21 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 97,
    "sha256": "615f82979a3bf7cc91532a77fbed7c37f58ccff99215c05fc4a73b99c50293fa",
    "size": 480960,
    "src": "B",
-   "ref": 46
+   "ref": 49
   },
   {
    "path": 97,
    "sha256": "1edd1697c58ab07f4822a8c95b9e6b415622cf8c583b3cf264ee7619fd67c09c",
    "size": 481296,
    "src": "B",
-   "ref": 45
+   "ref": 48
   },
   {
    "path": 98,
@@ -6081,21 +6081,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 98,
    "sha256": "992eb0e56e7012692124a999ca0a7ad0129cc9e5a5236cdba62f9354d2d9565a",
    "size": 556944,
    "src": "B",
-   "ref": 48
+   "ref": 51
   },
   {
    "path": 98,
    "sha256": "5db738bfa5d3388b8bc0b6cf0c51d8e184a8ab1daba67ec77f7bf29f62f297f3",
    "size": 556928,
    "src": "B",
-   "ref": 47
+   "ref": 50
   },
   {
    "path": 99,
@@ -6109,7 +6109,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 100,
@@ -6123,21 +6123,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 100,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 100,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 101,
@@ -6151,7 +6151,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 102,
@@ -6165,21 +6165,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 102,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 102,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 103,
@@ -6193,7 +6193,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 104,
@@ -6207,21 +6207,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 104,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 104,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 105,
@@ -6235,7 +6235,7 @@
    "sha256": "8a3778e8619dad8c8c940ebe2144b2ac3e718c3b5031072ea59312fb3ab2f1e3",
    "size": 481216,
    "src": "B",
-   "ref": 35
+   "ref": 38
   },
   {
    "path": 106,
@@ -6249,21 +6249,21 @@
    "sha256": "383ebf408e541185771f4cdbbe7992081180d43713ee6b1aa864195ec54bd1fb",
    "size": 556304,
    "src": "B",
-   "ref": 37
+   "ref": 40
   },
   {
    "path": 106,
    "sha256": "055a37a3174b7f69d0d96c04784ae74e1c6c04c4f0ec14b5c70afbf7fc55c352",
    "size": 556624,
    "src": "B",
-   "ref": 36
+   "ref": 39
   },
   {
    "path": 106,
    "sha256": "86bb987c5e9579fc754e938a9ee2f9bff75c754b406b784d320afe430c53102b",
    "size": 556704,
    "src": "B",
-   "ref": 38
+   "ref": 41
   },
   {
    "path": 107,
@@ -6277,7 +6277,7 @@
    "sha256": "aab9aca1378c82322ccdc88d01028124cedf7aee6310107b1fc9bc9a55b5e756",
    "size": 637744,
    "src": "B",
-   "ref": 49
+   "ref": 52
   },
   {
    "path": 108,
@@ -6291,21 +6291,21 @@
    "sha256": "35d40a59a55c66135bd4f6bd6f9196d12e1b4a3ec374bda76f6d16dcef3ff078",
    "size": 643820,
    "src": "B",
-   "ref": 50
+   "ref": 53
   },
   {
    "path": 108,
    "sha256": "e9f3fc5c0128f0cb8c5c1cfd2e0c47796235f01055abfe371e604352e075394e",
    "size": 644123,
    "src": "B",
-   "ref": 52
+   "ref": 55
   },
   {
    "path": 108,
    "sha256": "9e87154ce850bfd7278aef1986dcc5188c8596498a376d7099a5bf5726d18bcd",
    "size": 644227,
    "src": "B",
-   "ref": 51
+   "ref": 54
   },
   {
    "path": 109,
@@ -6326,7 +6326,7 @@
    "sha256": "3796bc1b490555e9f9c9c7c97084b4b8965e9e4a83c30c609609297d1419cb89",
    "size": 6471232,
    "src": "B",
-   "ref": 53
+   "ref": 56
   },
   {
    "path": 112,
@@ -6375,21 +6375,21 @@
    "sha256": "51e7d017d39effb076b07e94ba35cb989415222e2037797284e9222009cdf7e4",
    "size": 6272,
    "src": "B",
-   "ref": 54
+   "ref": 57
   },
   {
    "path": 119,
    "sha256": "376059e866d0819e928902d736b81174fe23227d9af7c4f8fdea9a4d5d426d53",
    "size": 6240,
    "src": "B",
-   "ref": 55
+   "ref": 58
   },
   {
    "path": 120,
    "sha256": "3120629519c1971884d91179ed1943ada0ebd87171442e954882190895871831",
    "size": 20230048,
    "src": "B",
-   "ref": 56
+   "ref": 59
   },
   {
    "path": 121,
@@ -6403,7 +6403,7 @@
    "sha256": "692e389799466267d9a5d9537589b69844adee8e439a29167e7381267d57ec83",
    "size": 20230032,
    "src": "B",
-   "ref": 57
+   "ref": 60
   },
   {
    "path": 123,
@@ -6452,210 +6452,210 @@
    "sha256": "be36bb1eafe7eeb7314693beb81dbd2dc07a6d627e36525c3326174e584c72b0",
    "size": 3058896,
    "src": "B",
-   "ref": 58
+   "ref": 61
   },
   {
    "path": 130,
    "sha256": "116053b4456c59ddd319066876b8eb0670f4bc20bea1c3b6cda8fb331a5caf8a",
    "size": 1994224,
    "src": "B",
-   "ref": 59
+   "ref": 62
   },
   {
    "path": 131,
    "sha256": "e1b20fe1e7299080adbd54b74dfe5b890e685b08a0b0965306c9574579a26d91",
    "size": 3119824,
    "src": "B",
-   "ref": 60
+   "ref": 63
   },
   {
    "path": 132,
    "sha256": "355a275eb4322d2fbd984382132c5bfb59cffc4b4f5d920ec6978f6bb7ad5711",
    "size": 1986816,
    "src": "B",
-   "ref": 61
+   "ref": 64
   },
   {
    "path": 133,
    "sha256": "dd9beeb0419341d7f6ce8e56688b93641e711c32f7c3e415d1716550510d4245",
    "size": 3210800,
    "src": "B",
-   "ref": 62
+   "ref": 65
   },
   {
    "path": 134,
    "sha256": "8a8ce1e9bd96e971e0720041d582e7a87da2dc40f6a692aa567fde3a4487a3b8",
    "size": 2010464,
    "src": "B",
-   "ref": 63
+   "ref": 66
   },
   {
    "path": 135,
    "sha256": "4c8f15ab327c50ead0278b01534493e304358f5bc1c5f605dba867d17866cefd",
    "size": 3577424,
    "src": "B",
-   "ref": 64
+   "ref": 67
   },
   {
    "path": 136,
    "sha256": "5f6b7f65948d4c1716859fe19bbc73bc61f9539edcf60772d8319bd3f8ae58a6",
    "size": 2141680,
    "src": "B",
-   "ref": 65
+   "ref": 68
   },
   {
    "path": 137,
    "sha256": "71de007b549ae656c52afd757575453773ccfe6da94b090922bf051c5fbb2a95",
    "size": 3285728,
    "src": "B",
-   "ref": 66
+   "ref": 69
   },
   {
    "path": 138,
    "sha256": "2ec1d6ab446606f6ea9f27189743715cedbcb1d1e6d60c908e63e74aea234912",
    "size": 2174848,
    "src": "B",
-   "ref": 67
+   "ref": 70
   },
   {
    "path": 139,
    "sha256": "a0c980e354f551ce9d8cb8b2fc82b4240b22a4c083f784e6e08143b2bd5b521e",
    "size": 3403344,
    "src": "B",
-   "ref": 68
+   "ref": 71
   },
   {
    "path": 140,
    "sha256": "65c6374dc14d83f6952c4887e5fa410be2da59687ca94a3028bdd61fca402832",
    "size": 2187104,
    "src": "B",
-   "ref": 69
+   "ref": 72
   },
   {
    "path": 141,
    "sha256": "5874b3c84ecc10c66460d766df94ed2a846fe6c5008621107a6d91a550801ecf",
    "size": 15951680,
    "src": "B",
-   "ref": 70
+   "ref": 73
   },
   {
    "path": 142,
    "sha256": "7b65016445e7f914097e7cd481e5d2783563d42497b25a2894800c0ba42009ee",
    "size": 15951680,
    "src": "B",
-   "ref": 71
+   "ref": 74
   },
   {
    "path": 143,
    "sha256": "59571153a2c389a3d29cc46ecea7e5969af19de88cf4bceb35ccd22c400996d8",
    "size": 15951680,
    "src": "B",
-   "ref": 72
+   "ref": 75
   },
   {
    "path": 144,
    "sha256": "527fa7c6f3320e8a6413b4b449cf352df43bb6b6e0226adee648fd9ab366fe4b",
    "size": 15951680,
    "src": "B",
-   "ref": 73
+   "ref": 76
   },
   {
    "path": 145,
    "sha256": "fae51a6ae0224b106a261ee8720c855cf374ab5594c4627e7e75b1a303c06957",
    "size": 15951680,
    "src": "B",
-   "ref": 74
+   "ref": 77
   },
   {
    "path": 146,
    "sha256": "613f5235ab8e79d2c666314cce93b25a7e93aa7befb556f218034dedfcfb2c4e",
    "size": 15951680,
    "src": "B",
-   "ref": 75
+   "ref": 78
   },
   {
    "path": 147,
    "sha256": "5c4af90ab9d60e94b9093139aef61fb3c53ace54095e1b3330b649f91bf110e5",
    "size": 2073168,
    "src": "B",
-   "ref": 76
+   "ref": 79
   },
   {
    "path": 148,
    "sha256": "096e9a9197489b013ef12714f960c78d7e65f069446e3de34e8b2a65fa16dd60",
    "size": 1087200,
    "src": "B",
-   "ref": 77
+   "ref": 80
   },
   {
    "path": 149,
    "sha256": "ee372b7921c3ddf32428d4e344a1470d0bd83d584e04129b6f1ba5ca778e99f3",
    "size": 2280624,
    "src": "B",
-   "ref": 78
+   "ref": 81
   },
   {
    "path": 150,
    "sha256": "61af9dc449f973a61e82614bf6d5ab61f786aa82666b99c017e6e5ac587c093d",
    "size": 1117824,
    "src": "B",
-   "ref": 79
+   "ref": 82
   },
   {
    "path": 151,
    "sha256": "c62ed917ffc5cac4d68b15f125da3616e2f02bbfe102e23317ab34be65eacdf3",
    "size": 7400800,
    "src": "B",
-   "ref": 80
+   "ref": 83
   },
   {
    "path": 152,
    "sha256": "03d4a1534af2ace7b3cb527364ad451b9ab8e860e8601630cbef1b95b3a4fea5",
    "size": 7333408,
    "src": "B",
-   "ref": 81
+   "ref": 84
   },
   {
    "path": 153,
    "sha256": "251da71928bd7866c6b563938c5e964c5f96db14b56024718d88481be48d3172",
    "size": 7400800,
    "src": "B",
-   "ref": 82
+   "ref": 85
   },
   {
    "path": 154,
    "sha256": "39d6ce681ffd9f23e9a63539fa9b8c2986f8c4d74322d108142c83d02d3d11be",
    "size": 7333408,
    "src": "B",
-   "ref": 83
+   "ref": 86
   },
   {
    "path": 155,
    "sha256": "6fabc46227d4f95d81efd81669180f55820c5fff1dc7a0613f7b09818c5f86da",
    "size": 7400800,
    "src": "B",
-   "ref": 84
+   "ref": 87
   },
   {
    "path": 156,
    "sha256": "bb048c0bee5a2c4fd595af639abe80dff5770f66670b3043e93661877856a985",
    "size": 7333408,
    "src": "B",
-   "ref": 85
+   "ref": 88
   },
   {
    "path": 157,
    "sha256": "8a73d16e10b5d9c72c7ecf5144b85fa26e9aebbab10ca7f1e9a8c2e14c5535a6",
    "size": 476272,
    "src": "B",
-   "ref": 86
+   "ref": 89
   },
   {
    "path": 158,
    "sha256": "b172ffa981eb24e53e59dc0efc307ecddcd94d2eb7f4daa5d16f7b1293bfb212",
    "size": 464384,
    "src": "B",
-   "ref": 87
+   "ref": 90
   },
   {
    "path": 159,
@@ -6697,14 +6697,14 @@
    "sha256": "a392fc89fd89c10a088838d2ec7262e4eb79f77474a18bd30508c6a62c2d77a0",
    "size": 1710272,
    "src": "B",
-   "ref": 88
+   "ref": 91
   },
   {
    "path": 165,
    "sha256": "9bf102f177487756460cfd62d5835bf3646ceeb9edea3324d6dd29c3b102c1ba",
    "size": 1710416,
    "src": "B",
-   "ref": 89
+   "ref": 92
   },
   {
    "path": 166,
@@ -6725,14 +6725,14 @@
    "sha256": "c04a5994eefab9437d4f0f559385ff67b077b6137266f183900378b4a58f7752",
    "size": 3984,
    "src": "B",
-   "ref": 90
+   "ref": 93
   },
   {
    "path": 169,
    "sha256": "89fbc08f8b2fd2ebfc403f235e61cd9521a3bff333993655f6d3bbf96f0c8c61",
    "size": 4032,
    "src": "B",
-   "ref": 91
+   "ref": 94
   },
   {
    "path": 170,
@@ -6746,7 +6746,7 @@
    "sha256": "d9c9446e6a3a4205d90343a3346e8123feb8cafb39fd1b484382d4559b77379b",
    "size": 5963440,
    "src": "B",
-   "ref": 92
+   "ref": 95
   },
   {
    "path": 172,
@@ -7285,14 +7285,14 @@
    "sha256": "ef99a50ba7b3765f878292771304cf99bb59d0e025ba53b29e6f50127f32db5e",
    "size": 367632,
    "src": "A",
-   "ref": 226
+   "ref": 222
   },
   {
    "path": 249,
    "sha256": "316335c7d9faf4b18ec61f3521a7f51fa556c639bbe701472d1d68515847ba11",
    "size": 2218352,
    "src": "A",
-   "ref": 227
+   "ref": 223
   },
   {
    "path": 250,
@@ -7572,77 +7572,77 @@
    "sha256": "62e58988458a72e893f3571eaaf134a1f51d93b4cae4d98c6ca80013e6fe4a37",
    "size": 3060496,
    "src": "B",
-   "ref": 97
+   "ref": 100
   },
   {
    "path": 288,
    "sha256": "4ab1ea43dc8bce7379dccf905ecb004747bbe5efe9bddae9c351843dcaf3c3ab",
    "size": 3059552,
    "src": "B",
-   "ref": 96
+   "ref": 99
   },
   {
    "path": 288,
    "sha256": "b56e4905b9d16692338679a433e871146c2fe949543a84fa6a98931342747471",
    "size": 3060208,
    "src": "B",
-   "ref": 100
+   "ref": 103
   },
   {
    "path": 288,
    "sha256": "7e026028fb536e227b8b522051fca5371cc8436935e66572bcfe9bdab0eff3fa",
    "size": 3059760,
    "src": "B",
-   "ref": 99
+   "ref": 102
   },
   {
    "path": 288,
    "sha256": "319d4f4cf780c6f355f7e0601c3cc2788003706da4ee8f7799189cd2515bd28b",
    "size": 3060368,
    "src": "B",
-   "ref": 94
+   "ref": 97
   },
   {
    "path": 288,
    "sha256": "cee0053e66502b500bd0e5ebafa474388b85e59fb0d12052ea0b971431c81f47",
    "size": 3059488,
    "src": "B",
-   "ref": 101
+   "ref": 104
   },
   {
    "path": 288,
    "sha256": "181c1eebe0333658ffd9459cb44e67a4278a218828a0d3c441ffb8a06a230276",
    "size": 3060128,
    "src": "B",
-   "ref": 93
+   "ref": 96
   },
   {
    "path": 288,
    "sha256": "66790caf27bd792f375285e0d8a5e4583e8d7cbd46acde4598f28ef7d9b1cd7c",
    "size": 3059472,
    "src": "B",
-   "ref": 98
+   "ref": 101
   },
   {
    "path": 288,
    "sha256": "3a21e01e9ce3e9859d4b4359f019b5e604cc695a483dfa82321120ad52c5edde",
    "size": 3060096,
    "src": "B",
-   "ref": 95
+   "ref": 98
   },
   {
    "path": 289,
    "sha256": "6d86520b469cb99148bce06692225f41fb2fac429ffe6ca9d8384ac6288a7579",
    "size": 32448,
    "src": "B",
-   "ref": 102
+   "ref": 105
   },
   {
    "path": 289,
    "sha256": "a25d5d9cb673612e648d5cb0693e8837d3b3789412bd8fbb3833d9079863cbcb",
    "size": 34016,
    "src": "A",
-   "ref": 228
+   "ref": 224
   },
   {
    "path": 290,
@@ -7663,7 +7663,7 @@
    "sha256": "479035bd129b75b18eae1a4e9af817121897b8f55079f09b8495853e59ef073d",
    "size": 75189255,
    "src": "B",
-   "ref": 103
+   "ref": 106
   },
   {
    "path": 292,
@@ -7698,14 +7698,14 @@
    "sha256": "24298c529fd8e36e3c36e32a126d3a775aac2cac01d49105a1a78559072dd536",
    "size": 40185148,
    "src": "B",
-   "ref": 104
+   "ref": 107
   },
   {
    "path": 296,
    "sha256": "5d9c23218c216b912fb9f7edd58a69441d419b8a0cf20b4b66714dc3f41a5b62",
    "size": 57945315,
    "src": "B",
-   "ref": 105
+   "ref": 108
   },
   {
    "path": 296,
@@ -7719,7 +7719,7 @@
    "sha256": "8c5cf369452739034594130f1c5cb4af8019f5abc22afdde08cde8787d66a525",
    "size": 58636246,
    "src": "B",
-   "ref": 106
+   "ref": 109
   },
   {
    "path": 297,
@@ -9099,9 +9099,9 @@
   {
    "id": "nrm_02",
    "comp": 5,
-   "title": "Nightreign Movement 0.2 Wylder (Convergence 3.0.2 edition)",
+   "title": "Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition)",
    "author": "neiroxgod",
-   "hint": "Download Nightreign Movement 0.2 Wylder, the Convergence 3.0.2 edition, with MANUAL DOWNLOAD on the Files tab of its Nexus page. Keep the zip as it is: Setup installs it (do not run its Install.cmd).",
+   "hint": "Download Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) with MANUAL DOWNLOAD on the Files tab of its Nexus page. Keep the zip as it is: Setup installs it.",
    "nexus_url": "https://www.nexusmods.com/eldenring/mods/11174?tab=files",
    "nexus_url_status": "",
    "name_hints": [
@@ -9146,13 +9146,9 @@
     "*[Cc][Ll][Ii][Mm][Bb]-[Ss][Tt][Ee][Pp]-4.[Ww][Aa][Vv]",
     "*[Cc][Ll][Ii][Mm][Bb]-[Ss][Tt][Ee][Pp]-5.[Ww][Aa][Vv]",
     "*[Ee][Vv][Ee][Nn][Tt][Nn][Aa][Mm][Ee][Ii][Dd].[Tt][Xx][Tt]",
-    "*[Ii][Nn][Ss][Tt][Aa][Ll][Ll]-[Ff][Ii][Ll][Ee][Ss].[Jj][Ss][Oo][Nn]",
     "*[Ii][Tt][Ee][Mm].[Mm][Ss][Gg][Bb][Nn][Dd].[Dd][Cc][Xx]",
     "*[Mm]00_00_00_00.[Tt][Aa][Ll][Kk][Ee][Ss][Dd][Bb][Nn][Dd].[Dd][Cc][Xx]",
-    "*[Mm][Ee][Mm]-[Mm][Ii][Tt].[Tt][Xx][Tt]",
-    "*[Mm][Ii][Nn][Hh][Oo][Oo][Kk]-[Bb][Ss][Dd]2.[Tt][Xx][Tt]",
     "*[Nn][Ii][Gg][Hh][Tt][Rr][Ee][Ii][Gg][Nn][Mm][Oo][Vv][Ee][Mm][Ee][Nn][Tt].[Cc][Oo][Nn][Vv][Ee][Rr][Gg][Ee][Nn][Cc][Ee].[Dd][Ll][Ll]",
-    "*[Nn][Oo][Tt][Ii][Cc][Ee].[Tt][Xx][Tt]",
     "*[Oo][Nn][Ss][Ll][Aa][Uu][Gg][Hh][Tt]-[Cc]000107003.[Ww][Aa][Vv]",
     "*[Oo][Nn][Ss][Ll][Aa][Uu][Gg][Hh][Tt]-[Cc]000107100.[Ww][Aa][Vv]",
     "*[Oo][Nn][Ss][Ll][Aa][Uu][Gg][Hh][Tt]-[Cc]000107101.[Ww][Aa][Vv]",
@@ -9176,381 +9172,357 @@
    ],
    "pins": [
     {
-     "size": 291489273,
-     "sha256": "23facf3f2f0795c6646ea5c6563b678eacd077a243b2988e72be04e697517be9"
+     "size": 291440302,
+     "sha256": "abfb768fc6f18df16fbdb5fd06e1258ce3c11ce0c2e59477a699f443c0697a3e"
     }
    ],
    "members": [
     {
-     "name": "install-files.json",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\install-files.json",
-     "sha256": "d05cf34d6687cad3986f30d88f88758c02eb91bfc2e90b622ace9888e3065e99",
-     "size": 51098
-    },
-    {
-     "name": "mem-MIT.txt",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\licenses\\mem-MIT.txt",
-     "sha256": "a624a5464ac2d91d0ec24aab56bda76f957a9be178bbdf0443c4c5374a58a0a5",
-     "size": 1061
-    },
-    {
-     "name": "MinHook-BSD2.txt",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\licenses\\MinHook-BSD2.txt",
-     "sha256": "4f21f857550d7be854da6ea5f2da4e6775ca4e3fbb535e4f3d961c47d0bf3335",
-     "size": 4446
-    },
-    {
-     "name": "NOTICE.txt",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\licenses\\NOTICE.txt",
-     "sha256": "8071e980ed88529eeb51e40eba1582c027a3540fc5fd35d79dc40feb53da6298",
-     "size": 316
-    },
-    {
      "name": "eventnameid.txt",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\action\\eventnameid.txt",
+     "tail": "mod\\action\\eventnameid.txt",
      "sha256": "e25d31eabf52e7b12c84fca01f99703349553a4ecec0fad2fd4d548bb5dfff0b",
      "size": 96368
     },
     {
      "name": "c9997.hks",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\action\\script\\c9997.hks",
+     "tail": "mod\\action\\script\\c9997.hks",
      "sha256": "a552a3e159d9bd82559de29840be45c7a1ec174ebd9e6b34bcde2122f7017acc",
      "size": 452185
     },
     {
      "name": "statenameid.txt",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\action\\statenameid.txt",
+     "tail": "mod\\action\\statenameid.txt",
      "sha256": "b280d4c0dc3398771b2cd8c7008d46b68db6579fd8fe3178d76e1aaf20e71be3",
      "size": 70256
     },
     {
      "name": "variablenameid.txt",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\action\\variablenameid.txt",
+     "tail": "mod\\action\\variablenameid.txt",
      "sha256": "41f10108a642aab343e3464f9db524b457b4da09585b1d7760590e6dc7f2c28a",
      "size": 19072
     },
     {
      "name": "claw-air-fire.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-air-fire.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-air-fire.wav",
      "sha256": "6a3a07296f1227b6db8d06465a9f08b270155118da6390b8302f896e45a12d34",
      "size": 143310
     },
     {
      "name": "claw-detach.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-detach.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-detach.wav",
      "sha256": "9b08276e2317ef5dea56c821b02984de6466cdb1c26e7c5625d5d0985240b247",
      "size": 37232
     },
     {
      "name": "claw-fire.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-fire.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-fire.wav",
      "sha256": "24dbdd8c9923c515b34d4b6bef5e8d0321b4e3412c1af02ecdfc05b45bae627d",
      "size": 104176
     },
     {
      "name": "claw-followup-prepare.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-followup-prepare.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-followup-prepare.wav",
      "sha256": "604f6161178ade60e126f3350c0b72ea1d32449fdf831859c9635c481e3f14ae",
      "size": 296094
     },
     {
      "name": "claw-followup-swing.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-followup-swing.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-followup-swing.wav",
      "sha256": "77923edf978021e8b6f386f5a3fbea0f9e99076105f1fbc29848fd5bef9a41d6",
      "size": 451266
     },
     {
      "name": "claw-jump.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-jump.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-jump.wav",
      "sha256": "033ee545e8160ca5476079154584cd53e3f10f5eaa8c397fcbb8ca96297336e8",
      "size": 113004
     },
     {
      "name": "claw-miss.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-miss.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-miss.wav",
      "sha256": "09f3752ed7c1b2c534e507a3a79bf6462f72afba5b6030010a15a06f948eb0b5",
      "size": 87348
     },
     {
      "name": "claw-ready.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-ready.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-ready.wav",
      "sha256": "aea4ce8ffa76135995208acb348d70949fad946ada22baad5c0077ac4177628a",
      "size": 51538
     },
     {
      "name": "claw-slide-0-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-0-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-0-1.wav",
      "sha256": "baa01da588dc58dac8abc84b29db274747c3c791df9ec02598249f37af43e078",
      "size": 127852
     },
     {
      "name": "claw-slide-0-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-0-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-0-2.wav",
      "sha256": "946385ff2e50e7332eddbdfb88d6418f154f9d57af79fffba39ecbc4c94760cb",
      "size": 127852
     },
     {
      "name": "claw-slide-1-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-1-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-1-1.wav",
      "sha256": "c640c09bff789f3992b36822a138c0fbbb4cb6712e5095ad3802f0422a105fc7",
      "size": 172878
     },
     {
      "name": "claw-slide-1-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-1-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-1-2.wav",
      "sha256": "fe08ddc46806d48943b28c092a41992d884ceec41a83924583aba22b0f2355c6",
      "size": 172878
     },
     {
      "name": "claw-slide-2-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-2-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-2-1.wav",
      "sha256": "d48d7433adafcfc298aa24b36036bb2531e7f3bfb15df8426dfd309a6cd85dd2",
      "size": 163182
     },
     {
      "name": "claw-slide-2-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-2-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-2-2.wav",
      "sha256": "e64dacf7331eeddb5cf841b9e871b4d58a2ccebcce1dec1ac6eb7033cac36057",
      "size": 163182
     },
     {
      "name": "claw-slide-3-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-3-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-3-1.wav",
      "sha256": "964c89dbed823129d9eccda20d747e224f44f5bedb973f42283fb0d9b8aeef27",
      "size": 206648
     },
     {
      "name": "claw-slide-3-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-3-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-3-2.wav",
      "sha256": "f85211ca4b2d757e3e42430f4ab47d428e887b0d1c7620863ef436827fea8dd5",
      "size": 206648
     },
     {
      "name": "claw-slide-4-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-4-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-4-1.wav",
      "sha256": "b99fc892b752f73ce7aad6e517185f02403a0e9dfdb1464ee8ce11272658b88f",
      "size": 267968
     },
     {
      "name": "claw-slide-4-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\claw-slide-4-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\claw-slide-4-2.wav",
      "sha256": "227da97db42837b6be657cc500e0b46e74d7f5198f363226f33d16b77029b138",
      "size": 267968
     },
     {
      "name": "climb-contact-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-contact-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-contact-1.wav",
      "sha256": "c7f2ae7f60bd55b73bde10de3709acc65e9da52939f63b7dc18243de395ede13",
      "size": 22932
     },
     {
      "name": "climb-contact-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-contact-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-contact-2.wav",
      "sha256": "7c705fad2aab5160fff088e7495b0ba58080a4eb975ae29eaa74181e0d56d155",
      "size": 20942
     },
     {
      "name": "climb-contact-3.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-contact-3.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-contact-3.wav",
      "sha256": "978af93628c5d29921b19ab39380f0f3fb822b27047dd6e297b1c7461676ff08",
      "size": 21268
     },
     {
      "name": "climb-contact-4.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-contact-4.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-contact-4.wav",
      "sha256": "a2b301863d62a9c60b4cc933813f06761fe9abc0eb70b4517509ef1472e95e5e",
      "size": 22498
     },
     {
      "name": "climb-contact-5.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-contact-5.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-contact-5.wav",
      "sha256": "f21c462965dc57d82211ad4fbd2835993da51a4275f8ac8f2619a0b5d7e39663",
      "size": 27260
     },
     {
      "name": "climb-step-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-step-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-step-1.wav",
      "sha256": "c732d037cb242e34d6378468a0a9ec1113c8df449781c6e08494cae97ab736d2",
      "size": 17718
     },
     {
      "name": "climb-step-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-step-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-step-2.wav",
      "sha256": "29b3197af65e06d0b982b9dda2fd61972406e5cb1f9ca18e2e70d89656eaee06",
      "size": 18104
     },
     {
      "name": "climb-step-3.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-step-3.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-step-3.wav",
      "sha256": "04892d4c4cb48aef02da3578a4cd248b9fe270266e606a3d1a9f1e81f1103c54",
      "size": 17424
     },
     {
      "name": "climb-step-4.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-step-4.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-step-4.wav",
      "sha256": "e4db8df604ade39c03b42980288d3d229f04141dbd6f705c704065d0278f2c41",
      "size": 21634
     },
     {
      "name": "climb-step-5.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\climb-step-5.wav",
+     "tail": "mod\\dll\\assets\\audio\\climb-step-5.wav",
      "sha256": "e5aafe6a234df27b460f22eab49ec67e3d8a66d305ce80cc2f7a44e0bacef532",
      "size": 20802
     },
     {
      "name": "onslaught-c000107003.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107003.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107003.wav",
      "sha256": "6bc744c537cb8ae5e34c7d0932e86dccddff8def44ca7c21528b6143e7f07ebd",
      "size": 87348
     },
     {
      "name": "onslaught-c000107100.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107100.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107100.wav",
      "sha256": "c3c23b2624503ae9f0db2666fe8ccbbf417396370ce4f7a2d904beebe5bc0d05",
      "size": 307108
     },
     {
      "name": "onslaught-c000107101.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107101.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107101.wav",
      "sha256": "388f7676734b753984518404159c8e0e6d1fa814cf2fbff0288bc41f5f077d8b",
      "size": 69574
     },
     {
      "name": "onslaught-c000107102.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107102.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107102.wav",
      "sha256": "53311923817e2272757c1f18c84dab3573649df39a8044377ef8f940e2484cf9",
      "size": 114692
     },
     {
      "name": "onslaught-c000107105.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107105.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107105.wav",
      "sha256": "9b08276e2317ef5dea56c821b02984de6466cdb1c26e7c5625d5d0985240b247",
      "size": 37232
     },
     {
      "name": "onslaught-c000107106.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107106.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107106.wav",
      "sha256": "4e6fa7158314d5566daee5663bee84c3777338c9b4696eb283d1fcb6325d0414",
      "size": 37232
     },
     {
      "name": "onslaught-c000107107.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107107.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107107.wav",
      "sha256": "0920aa0f144c99449b89da9f5270c0cdd2e0d03be4d691bb7f38911a357dac02",
      "size": 61162
     },
     {
      "name": "onslaught-c000107109.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-c000107109.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-c000107109.wav",
      "sha256": "cad6f0b4773aec9c57d019fb9ade66ff9c0147655e39fc95ccac003fe9afd2b1",
      "size": 124178
     },
     {
      "name": "onslaught-s000460000.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-s000460000.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-s000460000.wav",
      "sha256": "13b947bb0ebb8540eb112830613310c0e2d1061753d9c6ac859eeb95b3a86e5a",
      "size": 484212
     },
     {
      "name": "onslaught-s000460010.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\onslaught-s000460010.wav",
+     "tail": "mod\\dll\\assets\\audio\\onslaught-s000460010.wav",
      "sha256": "7a811b6529f8989af12fbf571a2c1086698ebfaaed5e0171632b977f5e730783",
      "size": 658140
     },
     {
      "name": "sprint-start.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\sprint-start.wav",
+     "tail": "mod\\dll\\assets\\audio\\sprint-start.wav",
      "sha256": "f25dea36f4ad75a0834cf6c2ce58badeb60ea82e8d539f5623127837304b18b1",
      "size": 713048
     },
     {
      "name": "wall-jump-1.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\wall-jump-1.wav",
+     "tail": "mod\\dll\\assets\\audio\\wall-jump-1.wav",
      "sha256": "d34529753c5550a07967a55c2b22b2b8a865a09239e4ac380c29cdfb35ce8df9",
      "size": 31954
     },
     {
      "name": "wall-jump-2.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\wall-jump-2.wav",
+     "tail": "mod\\dll\\assets\\audio\\wall-jump-2.wav",
      "sha256": "531ffbac43a24daff33bddaca03983aab9c3eeb19cc313aa6072bc5ffad77107",
      "size": 43096
     },
     {
      "name": "wall-jump-3.wav",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\audio\\wall-jump-3.wav",
+     "tail": "mod\\dll\\assets\\audio\\wall-jump-3.wav",
      "sha256": "b42261109e1c1cb58d4d0c83882493349f3b252a8c80e4b4ff8814f71e7ad8ca",
      "size": 36084
     },
     {
      "name": "claw-shot.png",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\ui\\claw-shot.png",
+     "tail": "mod\\dll\\assets\\ui\\claw-shot.png",
      "sha256": "15d6e06f4c4887cef42d4e880ddf306e4c182731b84e3efaee7a43728e048ed9",
      "size": 51057
     },
     {
      "name": "onslaught-stake.png",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\ui\\onslaught-stake.png",
+     "tail": "mod\\dll\\assets\\ui\\onslaught-stake.png",
      "sha256": "4cf238fa6bb10b88673f3c359ba53f0c8053b4042f7f8f041736f723d9c3b90b",
      "size": 88894
     },
     {
      "name": "wylder.png",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\assets\\ui\\wylder.png",
+     "tail": "mod\\dll\\assets\\ui\\wylder.png",
      "sha256": "971c043ed127d36efc0a234d965134c21a77b2b07483c39f578f89778833ca06",
      "size": 381845
     },
     {
      "name": "NightreignMovement.Convergence.dll",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\dll\\NightreignMovement.Convergence.dll",
+     "tail": "mod\\dll\\NightreignMovement.Convergence.dll",
      "sha256": "038961ff9ca062fb1e24868eb8517ff5ea91e082b2a467c7f795fa012e527f3c",
      "size": 496640
     },
     {
      "name": "01_common.sblytbnd.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\menu\\low\\01_common.sblytbnd.dcx",
+     "tail": "mod\\menu\\low\\01_common.sblytbnd.dcx",
      "sha256": "414b65b11715d68bdc42f5f0f897562d6c0fe404cfd66badc200f538031cd6f1",
      "size": 21440
     },
     {
      "name": "01_common.tpf.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\menu\\low\\01_common.tpf.dcx",
+     "tail": "mod\\menu\\low\\01_common.tpf.dcx",
      "sha256": "3c425ef203a51e3f0152a3e6da4d8dfecc304b3f36010ab33e78793cc7cd481b",
      "size": 53375952
     },
     {
      "name": "item.msgbnd.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\msg\\engus\\item.msgbnd.dcx",
+     "tail": "mod\\msg\\engus\\item.msgbnd.dcx",
      "sha256": "2a67dc3dc8875223fec98c0aa489ca07dcef272d6a737300cfc85d74e9e7ba42",
      "size": 241984
     },
     {
      "name": "item.msgbnd.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\msg\\rusru\\item.msgbnd.dcx",
+     "tail": "mod\\msg\\rusru\\item.msgbnd.dcx",
      "sha256": "1ce2fadd4ff6e30d42dcd381e7f35ccabbaaa2afd2deb5fe58dc11e10f272240",
      "size": 262256
     },
     {
      "name": "wp_a_5002.partsbnd.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\parts\\wp_a_5002.partsbnd.dcx",
+     "tail": "mod\\parts\\wp_a_5002.partsbnd.dcx",
      "sha256": "ef99a50ba7b3765f878292771304cf99bb59d0e025ba53b29e6f50127f32db5e",
      "size": 367632
     },
     {
      "name": "wp_a_5003.partsbnd.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\parts\\wp_a_5003.partsbnd.dcx",
+     "tail": "mod\\parts\\wp_a_5003.partsbnd.dcx",
      "sha256": "316335c7d9faf4b18ec61f3521a7f51fa556c639bbe701472d1d68515847ba11",
      "size": 2218352
     },
     {
      "name": "m00_00_00_00.talkesdbnd.dcx",
-     "tail": "NightreignMovement-0.2-Wylder-Convergence-3.0.2\\mod\\script\\talk\\m00_00_00_00.talkesdbnd.dcx",
+     "tail": "mod\\script\\talk\\m00_00_00_00.talkesdbnd.dcx",
      "sha256": "a25d5d9cb673612e648d5cb0693e8837d3b3789412bd8fbb3833d9079863cbcb",
      "size": 34016
     }
    ],
    "reference": {
     "kind": "zip",
-    "path": "${V65}\\sources\\nightreign_movement_02\\NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip"
+    "path": "${V65}\\sources\\nightreign_movement_12\\NightreignMovement 1.2 Wylder Convergence 3.0.2 11174 1.2.0 2026-09-29T18-23Z M1VyvG96u.zip"
    },
    "tested": null,
    "mem_start": 168,
@@ -9836,6 +9808,36 @@
    "upstream": "",
    "paths": [
     "mod\\dll\\licenses\\ERCapacityExpansion\\LICENSE.txt"
+   ]
+  },
+  {
+   "sha256": "a624a5464ac2d91d0ec24aab56bda76f957a9be178bbdf0443c4c5374a58a0a5",
+   "size": 1061,
+   "asset": "a624a5464ac2d91d-mem-MIT.txt",
+   "tag": "v6.5.0",
+   "upstream": "",
+   "paths": [
+    "mod\\dll\\licenses\\NightreignMovement\\mem-MIT.txt"
+   ]
+  },
+  {
+   "sha256": "4f21f857550d7be854da6ea5f2da4e6775ca4e3fbb535e4f3d961c47d0bf3335",
+   "size": 4446,
+   "asset": "4f21f857550d7be8-MinHook-BSD2.txt",
+   "tag": "v6.5.0",
+   "upstream": "",
+   "paths": [
+    "mod\\dll\\licenses\\NightreignMovement\\MinHook-BSD2.txt"
+   ]
+  },
+  {
+   "sha256": "8071e980ed88529eeb51e40eba1582c027a3540fc5fd35d79dc40feb53da6298",
+   "size": 316,
+   "asset": "8071e980ed88529e-NOTICE.txt",
+   "tag": "v6.5.0",
+   "upstream": "",
+   "paths": [
+    "mod\\dll\\licenses\\NightreignMovement\\NOTICE.txt"
    ]
   },
   {
@@ -11429,7 +11431,7 @@
   },
   {
    "comp": 5,
-   "text": "Nightreign Movement by neiroxgod - nexusmods.com/eldenring/mods/11174"
+   "text": "Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) by neiroxgod - nexusmods.com/eldenring/mods/11174"
   },
   {
    "comp": 6,

@@ -34,6 +34,9 @@ size and SHA-256 (the hex at the start of the name is the first 16 hex of its SH
 | `991cde348b8f86a7-CapacityExpansion.dll` | 254464 | `mod\dll\CapacityExpansion.dll` |
 | `351b79af0fcef56f-infinite_arrows.dll` | 167424 | `mod\dll\infinite_arrows.dll` |
 | `a7cc1fca8ee00d3c-LICENSE.txt` | 1074 | `mod\dll\licenses\ERCapacityExpansion\LICENSE.txt` |
+| `a624a5464ac2d91d-mem-MIT.txt` | 1061 | `mod\dll\licenses\NightreignMovement\mem-MIT.txt` |
+| `4f21f857550d7be8-MinHook-BSD2.txt` | 4446 | `mod\dll\licenses\NightreignMovement\MinHook-BSD2.txt` |
+| `8071e980ed88529e-NOTICE.txt` | 316 | `mod\dll\licenses\NightreignMovement\NOTICE.txt` |
 | `bc70371f21df98bd-NightreignMovement.ini` | 118 | `mod\dll\NightreignMovement.ini` |
 | `53883287b1c671b7-01_common.sblytbnd.dcx` | 45940 | `mod\menu\hi\01_common.sblytbnd.dcx` |
 | `b06d107e8891f863-01_common.sblytbnd.dcx` | 45999 | `mod\menu\hi\01_common.sblytbnd.dcx` |

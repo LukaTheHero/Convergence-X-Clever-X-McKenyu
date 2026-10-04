@@ -19,7 +19,7 @@ page. This repository holds:
 3. Download the other mods from their own pages:
    - required: Clever's Moveset Modpack 26.2: https://www.nexusmods.com/eldenring/mods/1928?tab=files
    - required: McKenyu's Modpack 1.4: https://www.nexusmods.com/eldenring/mods/8762?tab=files
-   - only if you tick it in the installer: Nightreign Movement 0.2 Wylder (Convergence 3.0.2 edition): https://www.nexusmods.com/eldenring/mods/11174?tab=files
+   - only if you tick it in the installer: Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition): https://www.nexusmods.com/eldenring/mods/11174?tab=files
    - only if you tick it in the installer: Seamless Co-op: https://www.nexusmods.com/eldenring/mods/510?tab=files
    - only if you tick it in the installer: Deflect Me Not - ConXCleverXMcKenyu EXP37.1: https://www.nexusmods.com/eldenring/mods/4138?tab=files
 4. Run the Auto Installer and tick the options you want. It finds your Convergence folder and your downloads
@@ -54,7 +54,7 @@ ERCapacityExpansion downloads from its author's own GitHub release first; this r
 - Lucy's armor: Chevaleresse II by yurica, from the Skyrim SE ports by THBG0 (SMP SE) and by yurica, THBossGamer, Jeir and docteure (CBBE BodySlide)
 - Lucy's hair: KS Hairdos by Kalilies and Stealthic, via the HDT SMP version by ousnius
 - Lucy's body mesh: based on CBBE by Caliente and ousnius
-- Nightreign Movement by neiroxgod - nexusmods.com/eldenring/mods/11174
+- Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) by neiroxgod - nexusmods.com/eldenring/mods/11174
 - Infinite Durations by Canalpa (Luka)
 - Infinite Arrows and Bolts v1.2 (Canalpa rebuild for Patch 1.17) - nexusmods.com/eldenring/mods/10389
 - Infinite Arrows and Bolts is built on fromsoftware-rs by vswarte (MIT or Apache-2.0); the idea comes from the original Infinite arrows and bolts by its author (nexusmods.com/eldenring/mods/9032)
@@ -68,8 +68,8 @@ Per-option credits: [CREDITS.md](CREDITS.md). Who owns what, and the licence tex
 ## Release v6.5.0
 
 - Release candidate: `rc8`
-- Catalog sha256: `ada9b0292270b825d28294a78d692aa31fab1eca060765477cfe2754e937cd8e` ([catalog.json](releases/v6.5.0/catalog.json))
-- 107 release assets, 1003.8 MB, listed in [releases/v6.5.0/ASSETS.md](releases/v6.5.0/ASSETS.md). Each asset is named
+- Catalog sha256: `be29ddf07264173b3e34fa9a3f292cb922ca6842355203a79ffad0b724bea6e9` ([catalog.json](releases/v6.5.0/catalog.json))
+- 110 release assets, 1003.8 MB, listed in [releases/v6.5.0/ASSETS.md](releases/v6.5.0/ASSETS.md). Each asset is named
   `<first 16 hex of its sha256>-<file name>`; the installer downloads it from
   `https://github.com/LukaTheHero/Convergence-X-Clever-X-McKenyu/releases/download/v6.5.0/<asset>` and checks its SHA-256 before anything in the game folder changes.
 

@@ -143,14 +143,15 @@
     },
     {
       "id": "nrm", "switch": "NRM", "kind": "T", "default": 0,
-      "title": "Nightreign Movement 0.2 - sprint, wall jumps, ledge climbing and Wylder's skills",
-      "desc": "Needs your own Nightreign Movement 0.2 download (Convergence edition) from neiroxgod's Nexus page; merged files from GitHub. With DMN, ERCapacityExpansion is added too.",
+      "title": "Nightreign Movement 1.2 - sprint, wall jumps, ledge climbing and Wylder's skills",
+      "desc": "Needs your own Nightreign Movement 1.2 download (Wylder, Convergence 3.0.2 edition) from neiroxgod's Nexus page; merged files from GitHub. With DMN, ERCapacityExpansion is added too.",
       "_desc_doc": "2026-10-03 (Luka's DMN + Wylder decision): DMN + NRM keeps Wylder and needs ERCapacityExpansion, which the installer adds by itself (the D rule). The Options page gives a description two lines, so the text stays short (tests\\dryrun.py layout: no CLIPPED).",
       "source": "nexus", "archives": ["nrm_02"], "product": "nrm", "hot": true,
       "natives": ["nrm"],
       "user_config": [{"dest": "mod\\dll\\NightreignMovement.ini", "from": "nrm_layer:_installer\\first_install\\dll\\NightreignMovement.ini"}],
       "_source_doc": "Release prep 2026-10-03 (Luka): Nightreign Movement is on Nexus since 0.2 'Wylder' (eldenring/mods/11174). Like every other author's mod, the player downloads it from its own page (consistency, and the downloads count for its author); Setup takes neiroxgod's unchanged files from that download (archive nrm_02) and the merged NRM files from GitHub. The installer-only copies of beta.16 on canalpa.com were retired the same day. The RC's NRM layer must be built from exactly that zip (package_version + sha256, pipeline\\rcinputs.py).",
-      "credit": "Nightreign Movement by neiroxgod - nexusmods.com/eldenring/mods/11174"
+      "credit": "Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) by neiroxgod - nexusmods.com/eldenring/mods/11174",
+      "_credit_doc": "2026-10-04 (Luka's Nexus download): the Nexus page 11174 labels the file 1.2 (1.2.0); its game files are byte for byte those of neiroxgod's package NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip, which the NRM layer was built from."
     },
     {
       "id": "infdur", "switch": "INFDUR", "kind": "C", "default": 0,
@@ -288,22 +289,26 @@
     },
     {
       "id": "nrm_02", "component": "nrm", "enabled": true,
-      "title": "Nightreign Movement 0.2 Wylder (Convergence 3.0.2 edition)",
+      "_id_doc": "2026-10-04: the id stays nrm_02 (tests, the component and the marker's VERIFIED_ARCHIVES name it); since then it is the Nexus 1.2 download.",
+      "title": "Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition)",
       "author": "neiroxgod",
       "nexus_url": "https://www.nexusmods.com/eldenring/mods/11174?tab=files",
       "_nexus_url_doc": "CONFIRMED: Luka gave this page on 2026-10-03 (never probe it).",
-      "hint": "Download Nightreign Movement 0.2 Wylder, the Convergence 3.0.2 edition, with MANUAL DOWNLOAD on the Files tab of its Nexus page. Keep the zip as it is: Setup installs it (do not run its Install.cmd).",
+      "hint": "Download Nightreign Movement 1.2 (Wylder, Convergence 3.0.2 edition) with MANUAL DOWNLOAD on the Files tab of its Nexus page. Keep the zip as it is: Setup installs it.",
       "name_hints": ["nightreignmovement", "nightreign movement", "wylder"],
-      "_name_hints_doc": "From neiroxgod's file name NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip (names and hints are compared as words); the pipeline adds the Nexus mod id 11174 as a hint of its own.",
+      "_name_hints_doc": "From the Nexus download name 'NightreignMovement 1.2 Wylder Convergence 3.0.2 11174 1.2.0 <date> <id>.zip' (names and hints are compared as words); the pipeline adds the Nexus mod id 11174 as a hint of its own. neiroxgod's 0.2 package NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip matches the same hints and is still accepted by its member files (not by a whole-archive pin): it holds the same files byte for byte (MEASURED 2026-10-04).",
       "mode": "P", "must_verify": true,
-      "verify_members": ["install-files.json"],
-      "_verify_members_doc": "Checked, never installed: neiroxgod's own package manifest (version 0.2, edition CONVERGENCE, 148 files). Only his own zip has it, so a package that merely carries copies of his files is refused (the McKenyu rule).",
+      "_verify_doc": "2026-10-04: no verify_members any more. The Nexus 1.2 zip has no install-files.json (it is neiroxgod's mod\\ folder only, 148 files), so the archive is accepted by its pinned members (name + sha256 of every member the installer takes from it) or, fast, by the whole-zip pin. The never-host rule keeps every one of these files out of the main zip and the release assets, and the v6.4 merge zips hold beta.16 files (another NightreignMovement.Convergence.dll), so only neiroxgod's own files pass.",
       "package_version": "0.2",
-      "_package_version_doc": "The RC's NRM layer must report this package version (and, when its report records it, this zip's sha256): a layer built from another NRM package is refused by the build (pipeline\\rcinputs.py nrm_package_problems) and by --final.",
-      "reference": {"kind": "zip", "path": "${V65}\\sources\\nightreign_movement_02\\NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip", "pin_whole_archive": true,
-                    "expect_sha256": "23facf3f2f0795c6646ea5c6563b678eacd077a243b2988e72be04e697517be9"},
-      "_reference_doc": "A copy of Luka's own download (his Downloads folder, only read): 291,489,273 B, 150 entries, install-files.json version 0.2, edition CONVERGENCE.",
-      "_doc": "must_verify: NRM is neiroxgod's mod; the player's own download is checked once per folder even when every NRM file is in place (as McKenyu and DMN). The files the NRM layer ships unchanged (sha256 equal to a member of this zip) are installed from it; the merged NRM files come from GitHub."
+      "_package_version_doc": "The RC's NRM layer must report this package version (install-files.json of neiroxgod's package says 0.2; Nexus labels the same files 1.2.0) and be built from the reference zip or from layer_package (pipeline\\rcinputs.py nrm_package_problems): a layer built from another NRM package is refused by the build and by --final.",
+      "reference": {"kind": "zip", "path": "${V65}\\sources\\nightreign_movement_12\\NightreignMovement 1.2 Wylder Convergence 3.0.2 11174 1.2.0 2026-09-29T18-23Z M1VyvG96u.zip", "pin_whole_archive": true,
+                    "expect_sha256": "abfb768fc6f18df16fbdb5fd06e1258ce3c11ce0c2e59477a699f443c0697a3e"},
+      "_reference_doc": "A copy of Luka's own Nexus download of 2026-10-04 (his Downloads folder, only read): 291,440,302 B, 148 entries, no top folder (members start at mod/). MEASURED 2026-10-04: all 148 are byte-identical (sha256) to the 148 mod/ files of neiroxgod's 0.2 package; the 0.2 package's other 14 files (changelogs, install texts and scripts, Me3Manager.ps1, install-files.json, licenses\\mem-MIT.txt, MinHook-BSD2.txt, NOTICE.txt) are not in it.",
+      "layer_package": {"path": "${V65}\\sources\\nightreign_movement_02\\NightreignMovement-0.2-Wylder-Convergence-3.0.2.zip",
+                        "expect_sha256": "23facf3f2f0795c6646ea5c6563b678eacd077a243b2988e72be04e697517be9",
+                        "hosted": ["licenses\\mem-MIT.txt", "licenses\\MinHook-BSD2.txt", "licenses\\NOTICE.txt"]},
+      "_layer_package_doc": "2026-10-04: the package the NRM layer was built from (nrm_rc8's report: package.zip_sha256). rcinputs.nrm_package_problems accepts a layer built from it; compose.never_host treats every file of it as the players' own (never in the main zip or a release asset) EXCEPT the 'hosted' tails (below its top folder): the three licence notices that ship next to NightreignMovement.Convergence.dll (mod\\dll\\licenses\\NightreignMovement\\). The Nexus 1.2 zip lacks them, so they are release assets (our copies of neiroxgod's notice files, byte for byte).",
+      "_doc": "must_verify: NRM is neiroxgod's mod; the player's own download is checked once per folder even when every NRM file is in place (as McKenyu and DMN). The files the NRM layer ships unchanged (sha256 equal to a member of this zip) are installed from it; the merged NRM files and the three licence notices come from GitHub."
     }
   ],
   "natives": [
